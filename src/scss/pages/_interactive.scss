@@ -1,0 +1,15 @@
+@import "core/variables";
+@import "core/reset";
+// @import "components/code";
+// @import "components/links";
+// @import "layout/page";
+@import "layout/header";
+@import "layout/footer";
+
+.main__fieldset-desing {
+  border: 2px solid black;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
