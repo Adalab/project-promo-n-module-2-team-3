@@ -3,66 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>Awesome profile-cards</title>
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font awsome -->
+    <script
+      src="https://kit.fontawesome.com/adcd08db79.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
   </head>
 
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
-
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
+    <main class="main">
+      <img
+        src="./assets/images/logo-awesome-profile-cards.svg"
+        alt=" principal image"
+        class="main__img"
+      />
+      <section>
+        <h1 class="main__tittle">Crea tu tarjeta de visita</h1>
+        <p class="main__text">
+          crea mejores contactos profesionales de forma fácil y cómoda
         </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+      </section>
 
+      <section class="main__section">
+        <ul class="main__section--ul">
+          <li class="main__section--ul--li">
+            <h2 class="main__section--ul--li--tittle">Diseña</h2>
+            <span class="main__section--ul--li--icon">
+              <i class="far fa-object-ungroup"></i
+            ></span>
           </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
-
+          <li class="main__section--ul--li">
+            <h2 class="main__section--ul--li--tittle">Rellena</h2>
+            <span class="main__section--ul--li--icon">
+              <i class="far fa-keyboard"></i
+            ></span>
+          </li>
+          <li class="main__section--ul--li">
+            <h2 class="main__section--ul--li--tittle">Comparte</h2>
+            <span class="main__section--ul--li--icon">
+              <i class="fas fa-share-alt"></i
+            ></span>
           </li>
         </ul>
-      </main>
+        <!-- <h2>Diseña</h2>
+        <i class="far fa-object-ungroup"></i>
+        <h2>Rellena</h2>
+        <i class="far fa-keyboard"></i>
+        <h2>comparte</h2>
+        <i class="fas fa-share-alt"></i> -->
+      </section>
+      <a href="./interactive.html" target="_blank"
+        ><input type="submit" value="comenzar" class="main__botom" />
+      </a>
+    </main>
+    <footer class="page__footer">
+      <small> &copy; Todos los derechos reservados </small>
+    </footer>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-        </small>
-      </footer>
-
-    </div>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Awesome profile-cards</title>
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font awsome -->
+    <script
+      src="https://kit.fontawesome.com/adcd08db79.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+  </head>
+
+  <body>
+    <header class="page__header">
+      <img src="./assets/images/logo-adalab.png" alt="Adalab">
+      <h1></h1>
+    </header>
+
+    <main>
+      <form class="main__fieldset">
+        <h1>holi</h1>
+
+        <fieldset class="main__fieldset--desing">
+          <h3 class="main__fieldset--desing__title title">
+            <i class="far fa-object-ungroup"></i> Diseña
+            <!--pendiente añadir flecha ^ -->
+          </h3>
+          <h6 class="main__fieldset--desing__subtitle subtitle">Colores</h6>
+          <label>
+            <input type="radio" name="blue-scale" value="blue-scale" />
+            <div class="main__fieldset--desing__colors-container">
+              <div
+                class="main__fieldset--desing__colors-container__color dark_green_blue"
+              ></div>
+              <div
+                class="main__fieldset--desing__colors-container__color dirty_blue"
+              ></div>
+              <div
+                class="main__fieldset--desing__colors-container__color hospital_green"
+              ></div>
+            </div>
+          </label>
+          <label>
+            <input type="radio" name="red-scale" value="red-scale" />
+            <div class="main__fieldset--desing__colors-container">
+              <div
+                class="main__fieldset--desing__colors-container__color dried_blood"
+              ></div>
+              <div
+                class="main__fieldset--desing__colors-container__color rusty_red"
+              ></div>
+              <div class="main__fieldset--desing__colors-container__color tomato"></div>
+            </div>
+          </label>
+          <label>
+            <input type="radio" name="mix-scale" value="mix-scale" />
+            <div class="main__fieldset--desing__colors-container">
+              <div class="main__fieldset--desing__colors-container__color slate"></div>
+              <div
+                class="main__fieldset--desing__colors-container__color faded_orange"
+              ></div>
+              <div
+                class="main__fieldset--desing__colors-container__color light_grey_blue"
+              ></div>
+            </div>
+          </label>
+        </fieldset>
+
+        <fieldset class="fill">
+          <h3><i class="far fa-keyboard"></i> rellena</h3>
+          <form action="/signup" method="post">
+            <label for="fullName">Nombre completo</label>
+            <input placeholder="Ej: Sally Jill" type="text" name="fullName" />
+            <label for="job">Puesto</label>
+            <input placeholder="Ej: Front-end unicorn" type="text" name="job" />
+            <label for="Añadir imagen">Imagen de perfil</label>
+            <input type="submit" value="Añadir imagen" />
+            <label for="emailAddress">Email</label>
+            <input
+              placeholder="Ej: sally-hill@gmail.com"
+              type="email"
+              name="emailAddress"
+            />
+            <label for="phone">Teléfono</label>
+            <input placeholder="Ej: 555-55-55-55" type="tel" name="phone" />
+            <label for="linkedin">Linkedin</label>
+            <input
+              placeholder="Ej: linkedin.com/sally.hill"
+              type="text"
+              name="linkedin"
+            />
+            <label for="github">Github</label>
+            <input placeholder="Ej: @sally-hill" type="text" name="github" />
+          </form>
+        </fieldset>
+
+        <fieldset class="main__fieldset--share">
+          <section class="main__fieldset--share__visible">
+            <h3 class="main__fieldset--share__visible--title title">
+              <i class="fas fa-share-alt"></i> Comparte
+              <!--pendiente añadir flecha ^ -->
+            </h3>
+            <input
+              class="main__fieldset--share__visible--button"
+              type="submit"
+              value="CREAR TARJETA"
+            />
+            <i class="far fa-id-card"></i>
+            <!--pendiente introducir FontAwesome inside button -->
+          </section>
+          <section class="main__fieldset--share__info hidden">
+            <h3 class="main__fieldset--share__info--title title">
+              La tarjecta ha sido creada:
+            </h3>
+            <p class="main__fieldset--share__info--p">
+              https://awesome-profile-card.com?id=A456DF0001
+            </p>
+            <!-- pendiente hacerlo interactivo -->
+            <input
+              class="main__fieldset--share__info--button"
+              type="submit"
+              value="Compartir en twitter"
+            />
+            <i class="fab fa-twitter"></i>
+            <!--pendiente introducir FontAwesome inside button -->
+          </section>
+        </fieldset>
+
+      </form>
+    </main>
+    <footer class="page__footer">
+      <small> &copy; Todos los derechos reservados </small>
+    </footer>
+
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
