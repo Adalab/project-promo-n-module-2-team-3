@@ -1,5 +1,31 @@
-<fieldset class="main__fieldset-share">
-  <h3 class="main__fieldset-share--title uppercase">
-    <i class="fas fa-share-alt"></i> Comparte
-  </h3>
+<fieldset class="main__fieldset--share">
+  <section class="main__fieldset--share__visible">
+    <h3 class="main__fieldset--share__visible--title title">
+      <i class="fas fa-share-alt"></i> Comparte
+      <!--pendiente añadir flecha ^ -->
+    </h3>
+    <input
+      class="main__fieldset--share__visible--button"
+      type="submit"
+      value="CREAR TARJETA"
+    />
+    <i class="far fa-id-card"></i>
+    <!--pendiente introducir FontAwesome inside button -->
+  </section>
+  <section class="main__fieldset--share__info hidden">
+    <h3 class="main__fieldset--share__info--title title">
+      La tarjecta ha sido creada:
+    </h3>
+    <p class="main__fieldset--share__info--p">
+      https://awesome-profile-card.com?id=A456DF0001
+    </p>
+    <!-- pendiente hacerlo interactivo -->
+    <input
+      class="main__fieldset--share__info--button"
+      type="submit"
+      value="Compartir en twitter"
+    />
+    <i class="fab fa-twitter"></i>
+    <!--pendiente introducir FontAwesome inside button -->
+  </section>
 </fieldset>
