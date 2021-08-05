@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
     />
+
     <!-- Font awsome -->
     <script
       src="https://kit.fontawesome.com/adcd08db79.js"
@@ -21,20 +22,49 @@
   </head>
 
   <body>
-    <main>
-      <img src="./assets/images/logo-awesome-profile-cards.svg" alt="" />
-      <h1>Crea tu tarjeta de visita</h1>
-      <p>crea mejores contactos profesionales de forma fácil y cómoda</p>
+    <main class="main">
+      <img
+        src="./assets/images/logo-awesome-profile-cards.svg"
+        alt=" principal image"
+        class="main__img"
+      />
       <section>
-        <h2>Diseña</h2>
+        <h1 class="main__tittle">Crea tu tarjeta de visita</h1>
+        <p class="main__text">
+          crea mejores contactos profesionales de forma fácil y cómoda
+        </p>
+      </section>
+
+      <section class="main__section">
+        <ul class="main__section--ul">
+          <li class="main__section--ul--li">
+            <h2 class="main__section--ul--li--tittle">Diseña</h2>
+            <span class="main__section--ul--li--icon">
+              <i class="far fa-object-ungroup"></i
+            ></span>
+          </li>
+          <li class="main__section--ul--li">
+            <h2 class="main__section--ul--li--tittle">Rellena</h2>
+            <span class="main__section--ul--li--icon">
+              <i class="far fa-keyboard"></i
+            ></span>
+          </li>
+          <li class="main__section--ul--li">
+            <h2 class="main__section--ul--li--tittle">Comparte</h2>
+            <span class="main__section--ul--li--icon">
+              <i class="fas fa-share-alt"></i
+            ></span>
+          </li>
+        </ul>
+        <!-- <h2>Diseña</h2>
         <i class="far fa-object-ungroup"></i>
         <h2>Rellena</h2>
         <i class="far fa-keyboard"></i>
         <h2>comparte</h2>
-        <i class="fas fa-share-alt"></i>
+        <i class="fas fa-share-alt"></i> -->
       </section>
       <a href="./interactive.html" target="_blank"
-        ><input type="submit" value="comenzar" />
+        ><input type="submit" value="comenzar" class="main__botom" />
       </a>
     </main>
     <include src="./partials/footer.html"></include>
