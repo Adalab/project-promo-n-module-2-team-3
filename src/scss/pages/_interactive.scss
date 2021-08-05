@@ -13,3 +13,40 @@
 .uppercase {
   text-transform: uppercase;
 }
+
+.colors-container {
+  &__color {
+    width: 30px;
+    height: 25px;
+    display: inline-block;
+  }
+}
+// Diferent colors
+.dark_green_blue {
+  background-color: $dark_green_blue;
+}
+.dirty_blue {
+  background-color: $dirty_blue;
+}
+.hospital_green {
+  background-color: $hospital_green;
+}
+
+.dried_blood {
+  background-color: $dried_blood;
+}
+.rusty_red {
+  background-color: $rusty_red;
+}
+.tomato {
+  background-color: $tomato;
+}
+.slate {
+  background-color: $slate;
+}
+.faded_orange {
+  background-color: $faded_orange;
+}
+.light_grey_blue {
+  background-color: $light_grey_blue;
+}
