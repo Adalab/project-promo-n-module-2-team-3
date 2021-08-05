@@ -8,13 +8,19 @@
 
 .main__fieldset-desing {
   border: 2px solid black;
-}
-
-.uppercase {
   text-transform: uppercase;
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: $gunmetal;
+    font-family: ;
+  }
+  &__subtitle {
+  }
 }
 
 .colors-container {
+  width: fit-content;
   &__color {
     width: 30px;
     height: 25px;
