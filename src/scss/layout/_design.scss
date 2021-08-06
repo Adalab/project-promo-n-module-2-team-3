@@ -15,15 +15,17 @@
     font-size: 14px;
     font-weight: normal;
   }
-  .lab {
-    &__colors-container {
-      display: flex;
-      flex-direction: row;
-      &__color {
-        width: 30px;
-        height: 25px;
-        display: block;
-      }
+  & input {
+    display: block;
+    transform: scale(1.5);
+  }
+  .colors-container {
+    display: flex;
+    flex-direction: row;
+    &__color {
+      width: 30px;
+      height: 25px;
+      display: block;
     }
   }
 }
