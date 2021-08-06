@@ -1,22 +1,21 @@
 .from {
   font-family: $OpenSans;
   color: $gunmetal;
-  display: grid;
   .select {
     display: flex;
     flex-direction: column;
   }
-  .icon {
-    color: $orange;
-  }
-  .title {
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  .side {
-    padding-left: 217px;
-  }
+}
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.icon {
+  color: $orange;
+}
+.side {
+  padding-left: 217px;
 }
 
 @import "layout/design";
