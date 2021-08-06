@@ -4,6 +4,9 @@
     margin-top: 0px;
     margin-bottom: 20px;
   }
+  .title2 {
+    padding-bottom: 0px;
+  }
 }
 
 .options {
@@ -15,6 +18,7 @@
     color: $gunmetal;
     font-size: 14px;
     font-weight: normal;
+    padding-left: 20px;
   }
   .radio {
     display: flex;
