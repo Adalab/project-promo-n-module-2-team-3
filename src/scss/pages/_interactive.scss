@@ -1,14 +1,25 @@
-.main__fieldset {
+.from {
   font-family: $OpenSans;
   color: $gunmetal;
-  .title {
-    font-size: 18px;
-    font-weight: 600;
+  .select {
+    display: flex;
+    flex-direction: column;
   }
-  .subtitle {
-    font-size: 14px;
-    font-weight: normal;
-  }
+}
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.icon {
+  color: $orange;
+}
+.side {
+  padding-left: 168px;
+}
+.rotation:hover {
+  transform: rotate(180deg);
+  padding-right: 168px;
 }
 
 @import "layout/design";
