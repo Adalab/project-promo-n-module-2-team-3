@@ -1,0 +1,10 @@
+.fill{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    &__label{
+        height: 30px ;
+        border: solid 1px $hospital-green;
+        // width: 281px;
+    }
+}
