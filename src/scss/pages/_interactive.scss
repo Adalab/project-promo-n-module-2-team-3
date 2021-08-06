@@ -6,20 +6,25 @@
     flex-direction: column;
   }
 }
-.title {
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.icon {
-  color: $orange;
-}
-.side {
-  padding-left: 168px;
-}
-.rotation:hover {
-  transform: rotate(180deg);
-  padding-right: 168px;
+
+.section--title {
+  .title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+  }
+  .icon {
+    color: $orange;
+  }
+  .arrow {
+    float: left;
+    &:hover {
+      transform: rotate(180deg);
+      padding-right: 168px;
+    }
+  }
 }
 
 @import "layout/design";
