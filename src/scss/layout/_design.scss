@@ -1,6 +1,5 @@
 .desing {
   text-transform: uppercase;
-  height: 173px;
   &__title {
     margin-top: 0px;
     margin-bottom: 20px;
@@ -11,20 +10,21 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 30px;
   &__subtitle {
     color: $gunmetal;
     font-size: 14px;
     font-weight: normal;
   }
-  // .radio {
-  //   display: flex;
-  //   flex-direction: column;
-  //   width: 120px;
-  // }
+  .radio {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    row-gap: 20px;
+  }
   .option {
     display: flex;
     flex-direction: row;
-    row-gap: 20px;
   }
   & input {
     display: block;
@@ -32,7 +32,6 @@
     margin: 5px 10px;
   }
   .colors-container {
-    row-gap: 20px;
     display: flex;
     flex-direction: row;
     &__color {
