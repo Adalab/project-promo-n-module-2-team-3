@@ -4,9 +4,13 @@
   display: flex;
   justify-content: center;
   background-color: $white-two;
+  margin: auto;
+  @media all and (min-width: 768px) {
+    padding: 30px 527px 30px 40px;
+    justify-content: flex-start;
+  }
 }
 .header__img {
   width: 201px;
   height: 50px;
-  object-fit: contain;
 }
