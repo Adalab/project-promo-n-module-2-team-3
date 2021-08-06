@@ -1,23 +1,21 @@
 <fieldset class="share">
-  <section class="share__visible">
-    <include
-      class="share__visible--title title"
-      src="./title.html"
-      title="Comparte"
-      font_awesome="fas fa-share-alt"
-    ></include>
-    <button class="share__visible--button">
-      <i class="far fa-id-card"></i>
-      CREAR TARJETA
-    </button>
-  </section>
-  <section class="share__info hidden">
-    <h3 class="share__info--title title">La tarjecta ha sido creada:</h3>
-    <p class="share__info--p">https://awesome-profile-card.com?id=A456DF0001</p>
-    <!-- pendiente hacerlo interactivo -->
-    <button class="share__info--button">
-      <i class="fab fa-twitter"></i>
-      Compartir en twitter
-    </button>
-  </section>
+  <include
+    src="./title.html"
+    title="Comparte"
+    font_awesome="fas fa-share-alt"
+  ></include>
+  <button class="share--button">
+    <i class="far fa-id-card"></i>
+    <span> Crear tarjeta</span>
+  </button>
+</fieldset>
+
+<fieldset class="creada hidden">
+  <h3 class="creada--title">La tarjecta ha sido creada:</h3>
+  <p class="creada--p">https://awesome-profile-card.com?id=A456DF0001</p>
+  <!-- pendiente hacerlo interactivo -->
+  <button class="share__info--button">
+    <i class="fab fa-twitter"></i>
+    Compartir en twitter
+  </button>
 </fieldset>
