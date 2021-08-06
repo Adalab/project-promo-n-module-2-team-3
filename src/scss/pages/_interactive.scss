@@ -1,6 +1,11 @@
-.main__fieldset {
+.from {
   font-family: $OpenSans;
   color: $gunmetal;
+  display: grid;
+  .select {
+    display: flex;
+    flex-direction: column;
+  }
   .icon {
     color: $orange;
   }
