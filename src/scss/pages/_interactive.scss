@@ -1,8 +1,9 @@
-.from {
-  font-family: $OpenSans;
+fieldset {
+  border-bottom: #d8d8d8 solid 1px;
 }
 
 .select {
+  font-family: $OpenSans;
   display: flex;
   flex-direction: column;
   padding: 30px 20px 30px 20px;
@@ -10,14 +11,17 @@
 .section--title {
   font-family: $OpenSans;
   color: $gunmetal;
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
+  align-items: baseline;
   .title {
+    padding-left: 10px;
+    padding-bottom: 10px;
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
     width: 100%;
-    display: flex;
   }
   .icon {
     color: $orange;
