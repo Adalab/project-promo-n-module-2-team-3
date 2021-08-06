@@ -1,12 +1,13 @@
 .from {
   font-family: $OpenSans;
   color: $gunmetal;
-  .select {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
+.select {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px 30px 20px;
+}
 .section--title {
   font-family: $OpenSans;
   color: $gunmetal;
