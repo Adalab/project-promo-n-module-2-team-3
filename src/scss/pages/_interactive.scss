@@ -1,13 +1,16 @@
 .main__fieldset {
   font-family: $OpenSans;
   color: $gunmetal;
+  .icon {
+    color: $orange;
+  }
   .title {
     font-size: 18px;
     font-weight: 600;
+    text-transform: uppercase;
   }
-  .subtitle {
-    font-size: 14px;
-    font-weight: normal;
+  .side {
+    padding-left: 217px;
   }
 }
 
