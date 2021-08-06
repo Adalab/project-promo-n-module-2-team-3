@@ -1,5 +1,12 @@
-.page__header {
+.header {
+  height: 111px;
+  padding: 30px 79px 30px 40px;
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  justify-content: center;
+  background-color: $white-two;
+}
+.header__img {
+  width: 201px;
+  height: 50px;
+  object-fit: contain;
 }
