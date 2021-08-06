@@ -1,0 +1,40 @@
+* {
+  text-decoration: none;
+}
+
+.card__first__view {
+  width: 320px;
+  height: 457px;
+  background: linear-gradient($silver, $palegrey);
+  display: flex;
+  flex-direction: column;
+
+  .button__reset {
+    width: 75px;
+    height: 30px;
+    border-radius: 15px;
+    border: solid 2px $palegrey;
+    background-color: transparent !important;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-left: 45px;
+    margin-top: 38px;
+  }
+}
+
+.card__example {
+  width: 240px;
+  height: 329px;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.35);
+  font-family: $montserrat;
+
+  .photo__example {
+    width: 240px;
+    height: 200px;
+    margin-top: 30px;
+  }
+}
