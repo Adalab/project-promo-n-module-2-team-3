@@ -1,15 +1,13 @@
-* {
-  text-decoration: none;
-}
-
 .card__first__view {
-  width: 320px;
-  height: 457px;
+  min-width: 320px;
+  min-height: 457px;
   background: linear-gradient($silver, $palegrey);
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   .button__reset {
+    align-content: flex-start;
     width: 75px;
     height: 30px;
     border-radius: 15px;
@@ -17,8 +15,8 @@
     background-color: transparent !important;
     text-transform: uppercase;
     font-size: 12px;
-    margin-left: 35px;
     margin-top: 38px;
+    margin-right: 23vw;
   }
 }
 
@@ -28,16 +26,27 @@
   background-color: white;
   margin-top: 20px;
   margin-bottom: 40px;
-  margin-left: 40px;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.35);
 
   .text__section {
-    font-family: $montserrat;
-    color: $dirty_blue;
     text-transform: capitalize;
     margin-top: 15px;
-    margin-left: 20px;
     border-left: solid 5px $dirty_blue;
+    line-height: 1.4;
+
+    .name__card {
+      font-family: $montserrat;
+      font-weight: 700;
+      color: $dark_green_blue;
+      margin-left: 20px;
+    }
+
+    .job__name {
+      font-family: $montserrat;
+      color: $gunmetal;
+      margin-left: 20px;
+      font-weight: 400;
+    }
   }
 
   .photo__example {
@@ -48,5 +57,19 @@
 
   .link__section {
     margin-left: 20px;
+
+    .circle__awesome {
+      font-size: 18px;
+      color: $dark_green_blue;
+      display: inline-block;
+      text-align: center;
+      margin-top: 5px;
+      margin-left: 5px;
+      width: 32px;
+      height: 32px;
+      border-radius: 16px;
+      border: solid 2px $hospital_green;
+      line-height: 1.6;
+    }
   }
 }
