@@ -1,5 +1,6 @@
 .desing {
   text-transform: uppercase;
+  height: 173px;
   &__title {
     margin-top: 0px;
     margin-bottom: 20px;
@@ -15,11 +16,23 @@
     font-size: 14px;
     font-weight: normal;
   }
+  // .radio {
+  //   display: flex;
+  //   flex-direction: column;
+  //   width: 120px;
+  // }
+  .option {
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+  }
   & input {
     display: block;
-    transform: scale(1.5);
+    transform: scale(1.2);
+    margin: 5px 10px;
   }
   .colors-container {
+    row-gap: 20px;
     display: flex;
     flex-direction: row;
     &__color {
