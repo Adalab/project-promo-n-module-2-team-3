@@ -1,30 +1,23 @@
-<fieldset class="main__fieldset--share">
-  <section class="main__fieldset--share__visible">
+<fieldset class="share">
+  <section class="share__visible">
     <include
-      class="main__fieldset--share__visible--title title"
+      class="share__visible--title title"
       src="./title.html"
       title="Comparte"
       font_awesome="fas fa-share-alt"
     ></include>
-    <button class="main__fieldset--share__visible--button">
+    <button class="share__visible--button">
       <i class="far fa-id-card"></i>
       CREAR TARJETA
     </button>
   </section>
-  <section class="main__fieldset--share__info hidden">
-    <h3 class="main__fieldset--share__info--title title">
-      La tarjecta ha sido creada:
-    </h3>
-    <p class="main__fieldset--share__info--p">
-      https://awesome-profile-card.com?id=A456DF0001
-    </p>
+  <section class="share__info hidden">
+    <h3 class="share__info--title title">La tarjecta ha sido creada:</h3>
+    <p class="share__info--p">https://awesome-profile-card.com?id=A456DF0001</p>
     <!-- pendiente hacerlo interactivo -->
-    <input
-      class="main__fieldset--share__info--button"
-      type="submit"
-      value="Compartir en twitter"
-    />
-    <i class="fab fa-twitter"></i>
-    <!--pendiente introducir FontAwesome inside button -->
+    <button class="share__info--button">
+      <i class="fab fa-twitter"></i>
+      Compartir en twitter
+    </button>
   </section>
 </fieldset>
