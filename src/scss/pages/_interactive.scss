@@ -17,6 +17,10 @@
 .side {
   padding-left: 217px;
 }
+.rotation:hover {
+  transform: rotate(180deg);
+  padding-right: 217px;
+}
 
 @import "layout/design";
 // DESIGN
