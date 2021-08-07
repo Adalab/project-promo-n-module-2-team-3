@@ -1,48 +1,72 @@
-<fieldset class="fill">
-  <h3><i class="far fa-keyboard"></i> rellena</h3>
+<include
+  src="./title.html"
+  title="Rellena"
+  font_awesome="far fa-keyboard"
+></include>
 
-  <label for="fullName">Nombre completo</label>
+<fieldset class="fill">
+  <label for="fullName">Nombre completo<span class="asterisk">*</span></label>
   <input
+    id="fullName"
     placeholder="Ej: Sally Jill"
     type="text"
     name="fullName"
     class="fill__label"
+    required=""
   />
   <label for="job">Puesto</label>
+
   <input
+    id="job"
     placeholder="Ej: Front-end unicorn"
     type="text"
     name="job"
     class="fill__label"
+    required=""
   />
-  <label for="Añadir imagen">Imagen de perfil</label>
-  <input type="submit" value="Añadir imagen" />
-  <label for="emailAddress">Email</label>
+  <label for="photo">Imagen de perfil<span class="asterisk">*</span></label>
+  <div class="cont">
+    <div class="button">
+      <p class="button__text">Añadir imagen</p>
+      <input id="photo" type="file" name="photo" class="button__input" />
+      <div class="box"></div>
+    </div>
+  </div>
+
+  <label for="emailAddress">Email<span class="asterisk">*</span></label>
   <input
+    id="emailAddress"
     placeholder="Ej: sally-hill@gmail.com"
     type="email"
     name="emailAddress"
     class="fill__label"
+    required=""
   />
-  <label for="phone">Teléfono</label>
+  <label for="phone">Teléfono<span class="asterisk">*</span></label>
   <input
+    id="phone"
     placeholder="Ej: 555-55-55-55"
     type="tel"
     name="phone"
     class="fill__label"
+    required=""
   />
-  <label for="linkedin">Linkedin</label>
+  <label for="linkedin">Linkedin<span class="asterisk">*</span></label>
   <input
+    id="linkedin"
     placeholder="Ej: linkedin.com/sally.hill"
     type="text"
     name="linkedin"
     class="fill__label"
+    required=""
   />
-  <label for="github">Github</label>
+  <label for="github">Github<span class="asterisk">*</span></label>
   <input
+    id="github"
     placeholder="Ej: @sally-hill"
     type="text"
     name="github"
     class="fill__label"
+    required=""
   />
 </fieldset>
