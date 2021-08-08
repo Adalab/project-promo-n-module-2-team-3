@@ -1,7 +1,15 @@
 .fill {
-	&__label {
+	&__input {
 		height: 30px;
 		border: solid 1px $hospital-green;
+		margin: 7px 0 0;
+  		padding: 3px 0px 7px 0px;	
+	}
+	&__label{
+		margin: 20px 0 7px;
+		&--asterisk{
+			color:$orange;
+		}
 	}
 	&__data {
 		display: flex;
