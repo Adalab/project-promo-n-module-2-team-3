@@ -6,16 +6,31 @@
   flex-direction: column;
   align-items: center;
 
+  @media screen and (min-width: 768px) {
+    margin-left: 50vw;
+    margin-right: 40px;
+    height: 826px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+  }
+
   .button__reset {
     width: 75px;
     height: 30px;
     border-radius: 15px;
     border: solid 2px $palegrey;
-    background-color: transparent !important;
+    background-color: transparent;
     text-transform: uppercase;
+    font-family: $OpenSans;
     font-size: 12px;
     margin-top: 38px;
-    /* margin-right: 23vw;*/
+    margin-right: 50vw;
+    color: $gunmetal;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 170px;
+    }
   }
 }
 
@@ -26,6 +41,7 @@
   margin-top: 20px;
   margin-bottom: 40px;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.35);
+  border-radius: 2px;
 
   .text__section {
     text-transform: capitalize;
@@ -36,15 +52,17 @@
     .name__card {
       font-family: $montserrat;
       font-weight: 700;
+      font-size: 18px;
       color: $dark_green_blue;
       margin-left: 20px;
     }
 
     .job__name {
       font-family: $montserrat;
+      font-weight: 400;
+      font-size: 16px;
       color: $gunmetal;
       margin-left: 20px;
-      font-weight: 400;
     }
   }
 
