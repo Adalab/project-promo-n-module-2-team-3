@@ -1,13 +1,20 @@
+
 fieldset {
   border-bottom: #d8d8d8 solid 1px;
 }
 
-
+.form{ 
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+}
 .select {
   font-family: $OpenSans;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  width: 100vw;
+  align-items: stretch;
+  
   padding: 30px 20px 30px 20px;
 }
 .section--title {

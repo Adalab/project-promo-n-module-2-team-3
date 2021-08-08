@@ -1,72 +1,84 @@
-<include
-  src="./title.html"
-  title="Rellena"
-  font_awesome="far fa-keyboard"
-></include>
-
 <fieldset class="fill">
-  <label for="fullName">Nombre completo<span class="asterisk">*</span></label>
-  <input
-    id="fullName"
-    placeholder="Ej: Sally Jill"
-    type="text"
-    name="fullName"
-    class="fill__label"
-    required=""
-  />
-  <label for="job">Puesto</label>
+  <include
+    src="./title.html"
+    title="Rellena"
+    font_awesome="far fa-keyboard"
+  ></include>
+  <div class="fill__data">
+    <label for="fullName">Nombre completo<span class="asterisk">*</span></label>
+    <input
+      id="fullName"
+      placeholder="Ej: Sally Jill"
+      type="text"
+      name="fullName"
+      class="fill__label"
+      required=""
+    />
+    <label for="job">Puesto</label>
 
-  <input
-    id="job"
-    placeholder="Ej: Front-end unicorn"
-    type="text"
-    name="job"
-    class="fill__label"
-    required=""
-  />
-  <label for="photo">Imagen de perfil<span class="asterisk">*</span></label>
-  <div class="cont">
-    <div class="button">
-      <p class="button__text">Añadir imagen</p>
-      <input id="photo" type="file" name="photo" class="button__input" />
-      <div class="box"></div>
+    <input
+      id="job"
+      placeholder="Ej: Front-end unicorn"
+      type="text"
+      name="job"
+      class="fill__label"
+      required=""
+    />
+  </div>
+
+  <div class="fill__photo">
+    <label for="photo">Imagen de perfil<span class="asterisk">*</span></label>
+
+    <div class="fill__photo--image">
+      <div class="fill__photo--button">
+        <p class="fill__photo--button__text">Añadir imagen</p>
+        <input
+          id="photo"
+          type="file"
+          name="photo"
+          class="fill__photo--button__input"
+        />
+        <div class="fill__photo--box"></div>
+      </div>
     </div>
   </div>
 
-  <label for="emailAddress">Email<span class="asterisk">*</span></label>
-  <input
-    id="emailAddress"
-    placeholder="Ej: sally-hill@gmail.com"
-    type="email"
-    name="emailAddress"
-    class="fill__label"
-    required=""
-  />
-  <label for="phone">Teléfono<span class="asterisk">*</span></label>
-  <input
-    id="phone"
-    placeholder="Ej: 555-55-55-55"
-    type="tel"
-    name="phone"
-    class="fill__label"
-    required=""
-  />
-  <label for="linkedin">Linkedin<span class="asterisk">*</span></label>
-  <input
-    id="linkedin"
-    placeholder="Ej: linkedin.com/sally.hill"
-    type="text"
-    name="linkedin"
-    class="fill__label"
-    required=""
-  />
-  <label for="github">Github<span class="asterisk">*</span></label>
-  <input
-    id="github"
-    placeholder="Ej: @sally-hill"
-    type="text"
-    name="github"
-    class="fill__label"
-    required=""
-  />
+  <div class="fill__media">
+    <label for="emailAddress">Email<span class="asterisk">*</span></label>
+    <input
+      id="emailAddress"
+      placeholder="Ej: sally-hill@gmail.com"
+      type="email"
+      name="emailAddress"
+      class="fill__label"
+      required=""
+    />
+    <label for="phone">Teléfono<span class="asterisk">*</span></label>
+    <input
+      id="phone"
+      placeholder="Ej: 555-55-55-55"
+      type="tel"
+      name="phone"
+      class="fill__label"
+      required=""
+    />
+    <label for="linkedin">Linkedin<span class="asterisk">*</span></label>
+    <input
+      id="linkedin"
+      placeholder="Ej: linkedin.com/sally.hill"
+      type="text"
+      name="linkedin"
+      class="fill__label"
+      required=""
+    />
+    <label for="github">Github<span class="asterisk">*</span></label>
+    <input
+      id="github"
+      placeholder="Ej: @sally-hill"
+      type="text"
+      name="github"
+      class="fill__label"
+      required=""
+    />
+  </div>
 </fieldset>

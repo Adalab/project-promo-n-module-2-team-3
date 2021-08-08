@@ -11,6 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Font awsome -->
     <script
       src="https://kit.fontawesome.com/adcd08db79.js"
@@ -21,121 +33,210 @@
   </head>
 
   <body>
-    <header class="page__header">
-      <img src="./assets/images/logo-adalab.png" alt="Adalab">
-      <h1></h1>
+    <header class="header">
+      <img
+        src="./assets/images/logo-awesome-profile-cards.svg"
+        alt="Awesome profile cards"
+        class="header__img"
+      />
     </header>
 
     <main>
-      <form class="main__fieldset">
-        <h1>holi</h1>
+      <section class="card__first__view">
+        <button class="button__reset"><i class="far fa-trash-alt"></i> reset</button>
 
-        <fieldset class="main__fieldset--desing">
-          <h3 class="main__fieldset--desing__title title">
-            <i class="far fa-object-ungroup"></i> Diseña
-            <!--pendiente añadir flecha ^ -->
-          </h3>
-          <h6 class="main__fieldset--desing__subtitle subtitle">Colores</h6>
-          <label>
-            <input type="radio" name="blue-scale" value="blue-scale" />
-            <div class="main__fieldset--desing__colors-container">
-              <div
-                class="main__fieldset--desing__colors-container__color dark_green_blue"
-              ></div>
-              <div
-                class="main__fieldset--desing__colors-container__color dirty_blue"
-              ></div>
-              <div
-                class="main__fieldset--desing__colors-container__color hospital_green"
-              ></div>
-            </div>
-          </label>
-          <label>
-            <input type="radio" name="red-scale" value="red-scale" />
-            <div class="main__fieldset--desing__colors-container">
-              <div
-                class="main__fieldset--desing__colors-container__color dried_blood"
-              ></div>
-              <div
-                class="main__fieldset--desing__colors-container__color rusty_red"
-              ></div>
-              <div class="main__fieldset--desing__colors-container__color tomato"></div>
-            </div>
-          </label>
-          <label>
-            <input type="radio" name="mix-scale" value="mix-scale" />
-            <div class="main__fieldset--desing__colors-container">
-              <div class="main__fieldset--desing__colors-container__color slate"></div>
-              <div
-                class="main__fieldset--desing__colors-container__color faded_orange"
-              ></div>
-              <div
-                class="main__fieldset--desing__colors-container__color light_grey_blue"
-              ></div>
-            </div>
-          </label>
-        </fieldset>
+        <div class="card__example">
+          <div class="text__section">
+            <h3 class="name__card">nombre apellido</h3>
+            <h4 class="job__name">Front-end developer</h4>
+          </div>
+          <img
+            src="./assets/images/jessicawalsh.jpg"
+            class="photo__example"
+            alt="yourlogo"
+            title="yourlogo"
+          />
 
-        <fieldset class="fill">
-          <h3><i class="far fa-keyboard"></i> rellena</h3>
-          <form action="/signup" method="post">
-            <label for="fullName">Nombre completo</label>
-            <input placeholder="Ej: Sally Jill" type="text" name="fullName" />
-            <label for="job">Puesto</label>
-            <input placeholder="Ej: Front-end unicorn" type="text" name="job" />
-            <label for="Añadir imagen">Imagen de perfil</label>
-            <input type="submit" value="Añadir imagen" />
-            <label for="emailAddress">Email</label>
-            <input
-              placeholder="Ej: sally-hill@gmail.com"
-              type="email"
-              name="emailAddress"
-            />
-            <label for="phone">Teléfono</label>
-            <input placeholder="Ej: 555-55-55-55" type="tel" name="phone" />
-            <label for="linkedin">Linkedin</label>
-            <input
-              placeholder="Ej: linkedin.com/sally.hill"
-              type="text"
-              name="linkedin"
-            />
-            <label for="github">Github</label>
-            <input placeholder="Ej: @sally-hill" type="text" name="github" />
-          </form>
-        </fieldset>
+          <div class="link__section">
+            <a class="circle__awesome" href="" target="_blank">
+              <i class="fas fa-mobile-alt"></i>
+            </a>
 
-        <fieldset class="main__fieldset--share">
-          <section class="main__fieldset--share__visible">
-            <h3 class="main__fieldset--share__visible--title title">
-              <i class="fas fa-share-alt"></i> Comparte
-              <!--pendiente añadir flecha ^ -->
-            </h3>
-            <input
-              class="main__fieldset--share__visible--button"
-              type="submit"
-              value="CREAR TARJETA"
-            />
-            <i class="far fa-id-card"></i>
-            <!--pendiente introducir FontAwesome inside button -->
-          </section>
-          <section class="main__fieldset--share__info hidden">
-            <h3 class="main__fieldset--share__info--title title">
-              La tarjecta ha sido creada:
-            </h3>
-            <p class="main__fieldset--share__info--p">
-              https://awesome-profile-card.com?id=A456DF0001
-            </p>
+            <a class="circle__awesome" href="https://www.gmail.com/" target="_blank">
+              <i class="far fa-envelope"></i>
+            </a>
+
+            <a
+              class="circle__awesome"
+              href="https://www.linkedin.com/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a class="circle__awesome" href="https://www.github.com/" target="_blank">
+              <i class="fab fa-github-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <form class="form">
+        <section class="select">
+          <fieldset class="desing">
+            <section class="section--title desing__title">
+              <i class="far fa-object-ungroup icon"></i>
+              <h3 class="title title2">Diseña</h3>
+              <i class="fas fa-chevron-down arrow"></i>
+            </section>
+
+            <section class="options">
+              <h6 class="options__subtitle subtitle">Colores</h6>
+              <div class="radio">
+                <div class="option">
+                  <label for="color"> </label>
+                  <input id="color" type="radio" name="color" value="blue_scale" />
+                  <div class="colors-container">
+                    <div class="colors-container__color dark_green_blue"></div>
+                    <div class="colors-container__color dirty_blue"></div>
+                    <div class="colors-container__color hospital_green"></div>
+                  </div>
+                </div>
+
+                <div class="option">
+                  <label for="color"> </label>
+                  <input id="color" type="radio" name="color" value="red_scale" />
+                  <div class="colors-container">
+                    <div class="colors-container__color dried_blood"></div>
+                    <div class="colors-container__color rusty_red"></div>
+                    <div class="colors-container__color tomato"></div>
+                  </div>
+                </div>
+
+                <div class="option">
+                  <label for="color"> </label>
+                  <input id="color" type="radio" name="color" value="mix_scale" />
+                  <div class="colors-container">
+                    <div class="colors-container__color slate"></div>
+                    <div class="colors-container__color faded_orange"></div>
+                    <div class="colors-container__color light_grey_blue"></div>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+          </fieldset>
+
+          <fieldset class="fill">
+            <section class="section--title ">
+              <i class="far fa-keyboard icon"></i>
+              <h3 class="title ">Rellena</h3>
+              <i class="fas fa-chevron-down arrow"></i>
+            </section>
+
+            <div class="fill__data">
+              <label for="fullName">Nombre completo<span class="asterisk">*</span></label>
+              <input
+                id="fullName"
+                placeholder="Ej: Sally Jill"
+                type="text"
+                name="fullName"
+                class="fill__label"
+                required=""
+              />
+              <label for="job">Puesto</label>
+
+              <input
+                id="job"
+                placeholder="Ej: Front-end unicorn"
+                type="text"
+                name="job"
+                class="fill__label"
+                required=""
+              />
+            </div>
+
+            <div class="fill__photo">
+              <label for="photo">Imagen de perfil<span class="asterisk">*</span></label>
+
+              <div class="fill__photo--image">
+                <div class="fill__photo--button">
+                  <p class="fill__photo--button__text">Añadir imagen</p>
+                  <input
+                    id="photo"
+                    type="file"
+                    name="photo"
+                    class="fill__photo--button__input"
+                  />
+                  <div class="fill__photo--box"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fill__media">
+              <label for="emailAddress">Email<span class="asterisk">*</span></label>
+              <input
+                id="emailAddress"
+                placeholder="Ej: sally-hill@gmail.com"
+                type="email"
+                name="emailAddress"
+                class="fill__label"
+                required=""
+              />
+              <label for="phone">Teléfono<span class="asterisk">*</span></label>
+              <input
+                id="phone"
+                placeholder="Ej: 555-55-55-55"
+                type="tel"
+                name="phone"
+                class="fill__label"
+                required=""
+              />
+              <label for="linkedin">Linkedin<span class="asterisk">*</span></label>
+              <input
+                id="linkedin"
+                placeholder="Ej: linkedin.com/sally.hill"
+                type="text"
+                name="linkedin"
+                class="fill__label"
+                required=""
+              />
+              <label for="github">Github<span class="asterisk">*</span></label>
+              <input
+                id="github"
+                placeholder="Ej: @sally-hill"
+                type="text"
+                name="github"
+                class="fill__label"
+                required=""
+              />
+            </div>
+          </fieldset>
+
+          <fieldset class="share">
+            <section class="section--title ">
+              <i class="fas fa-share-alt icon"></i>
+              <h3 class="title ">Comparte</h3>
+              <i class="fas fa-chevron-down arrow"></i>
+            </section>
+
+            <button class="share--button">
+              <i class="far fa-id-card"></i>
+              <span> Crear tarjeta</span>
+            </button>
+          </fieldset>
+
+          <fieldset class="creada hidden">
+            <h3 class="creada--title">La tarjecta ha sido creada:</h3>
+            <p class="creada--p">https://awesome-profile-card.com?id=A456DF0001</p>
             <!-- pendiente hacerlo interactivo -->
-            <input
-              class="main__fieldset--share__info--button"
-              type="submit"
-              value="Compartir en twitter"
-            />
-            <i class="fab fa-twitter"></i>
-            <!--pendiente introducir FontAwesome inside button -->
-          </section>
-        </fieldset>
+            <button class="creada--button">
+              <i class="fab fa-twitter"></i>
+              <span class="span">Compartir en twitter</span>
+            </button>
+          </fieldset>
 
+        </section>
       </form>
     </main>
     <footer class="page__footer">
