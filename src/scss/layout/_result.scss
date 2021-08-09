@@ -6,13 +6,13 @@
   flex-direction: column;
   align-items: center;
 
-  @media screen and (min-width: 768px) {
-    margin-left: 50vw;
+  @include tablet {
     margin-right: 40px;
-    height: 826px;
+    height: 70vh;
     border-radius: 6px;
     justify-content: center;
     align-items: center;
+    width: 50%;
   }
 
   .button__reset {
