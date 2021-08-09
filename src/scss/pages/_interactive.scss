@@ -3,7 +3,7 @@
   @include tablet {
     display: flex;
     flex-direction: row-reverse;
-    min-height: 856px;
+    height: 856px;
   }
 }
 
@@ -19,7 +19,7 @@ fieldset {
   @include tablet {
     justify-content: flex-start;
     width: 50%;
-    height: 70vh;
+    height: 100%;
   }
 }
 .select {
