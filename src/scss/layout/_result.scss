@@ -15,6 +15,10 @@
     width: 50%;
   }
 
+  @include desktop {
+    width: 80%;
+  }
+
   .button__reset {
     width: 75px;
     height: 30px;
@@ -27,7 +31,7 @@
     margin-top: 38px;
     color: $gunmetal;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
       margin-right: 170px;
     }
   }
@@ -46,7 +50,6 @@
       text-transform: capitalize;
       margin-top: 15px;
       line-height: 1.4;
-
       border-left: solid 5px $dirty_blue;
 
       .name__card {

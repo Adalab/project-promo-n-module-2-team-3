@@ -1,0 +1,28 @@
+.page__footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .copy {
+    font-family: $OpenSans;
+    font-size: 14px;
+    color: $brownishgrey;
+    margin-top: 18px;
+  }
+
+  .adalab__logo {
+    width: 103px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 12px;
+  }
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
