@@ -1,5 +1,8 @@
 .fill {
 	&__input {
+		color: $pinkishgrey;
+		font-size: 14px;
+		line-height: 20px;
 		height: 30px;
 		border: solid 1px $hospital-green;
 		margin: 7px 0 0;
@@ -7,6 +10,9 @@
 	}
 	&__label{
 		margin: 20px 0 7px;
+		color: $dark_green_blue;
+		font-size: 14px;
+		line-height: 20px;
 		&--asterisk{
 			color:$orange;
 		}
@@ -29,8 +35,9 @@
 			height: 30px;
 			border-radius: 6px;
 			&__text {
+				padding-top: 5px;
 				text-align: center;
-				color: #fff;
+				color: $white-two;
 			}
 			&__input {
 				position: absolute;
@@ -47,6 +54,8 @@
             width: 30px;
             height: 30px;
             border: solid 1px $hospital-green;
+			margin-left: 180px;
+			margin-top: -20px;
         }
 	}
 	&__media {
