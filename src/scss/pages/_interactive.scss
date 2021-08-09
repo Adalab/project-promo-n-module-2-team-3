@@ -1,4 +1,9 @@
 .main_interactive {
+  background-image: linear-gradient(
+    to bottom,
+    var(--white-four),
+    var(--white-two) 9%
+  );
   @include tablet {
     display: flex;
     flex-direction: row-reverse;
