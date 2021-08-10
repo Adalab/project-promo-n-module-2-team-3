@@ -4,14 +4,14 @@ console.log('>> Hey :)');
 
 
 // 1
-//  const collapsableContent = document.querySelector ('.js_collapsable_content');
+const collapsableContent = document.querySelector ('.js_collapsable_content');
 
-//  if (collapsableContent.classList.contains('hidden')) {
-//  collapsableContent.classList.remove('hidden');
-//  }
-//  else {
-//  collapsableContent.classList.add('hidden');
-//  }
+if (collapsableContent.classList.contains('hidden')) {
+collapsableContent.classList.remove('hidden');
+}
+else {
+collapsableContent.classList.add('hidden');
+}
 
 
 // 2
@@ -25,11 +25,11 @@ console.log('>> Hey :)');
 //  }
 
 //  3
-//  const collapsableContent3 = document.querySelector ('.js_collapsable_content3');
+const collapsableContent3 = document.querySelector ('.js_collapsable_content3');
 
-//  if (collapsableContent3.classList.contains('hidden')) {
-//  collapsableContent3.classList.remove('hidden');
-//  }
-//  else {
-//  collapsableContent3.classList.add('hidden');
-//  }
+if (collapsableContent3.classList.contains('hidden')) {
+collapsableContent3.classList.remove('hidden');
+}
+else {
+collapsableContent3.classList.add('hidden');
+}
