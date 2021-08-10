@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Awesome profile-cards</title>
+    <link rel="icon" href="./assets/images/logo-head.png" />
     <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,7 +36,7 @@
   <body>
     <header class="header">
       <img
-        src="./assets/images/logo-awesome-profile-cards.svg"
+        src="./assets/images/awesome-logo-card.png"
         alt="Awesome profile cards"
         class="header__img"
       />
@@ -44,40 +45,52 @@
 
     <main class="main_interactive">
       <section class="card__first__view">
-        <button class="button__reset"><i class="far fa-trash-alt"></i> reset</button>
+        <div class="card__result">
+          <button class="button__reset">
+            <i class="far fa-trash-alt"></i> reset
+          </button>
 
-        <div class="card__example">
-          <div class="text__section">
-            <h3 class="name__card">nombre apellido</h3>
-            <h4 class="job__name">Front-end developer</h4>
-          </div>
-          <img
-            src="./assets/images/jessicawalsh.jpg"
-            class="photo__example"
-            alt="yourlogo"
-            title="yourlogo"
-          />
+          <div class="card__example">
+            <div class="text__section">
+              <h3 class="name__card">nombre apellido</h3>
+              <h4 class="job__name">Front-end developer</h4>
+            </div>
+            <img
+              src="./assets/images/jessicawalsh.jpg"
+              class="photo__example"
+              alt="yourlogo"
+              title="yourlogo"
+            />
 
-          <div class="link__section">
-            <a class="circle__awesome" href="" target="_blank">
-              <i class="fas fa-mobile-alt"></i>
-            </a>
+            <div class="link__section">
+              <a class="circle__awesome" href="" target="_blank">
+                <i class="fas fa-mobile-alt"></i>
+              </a>
 
-            <a class="circle__awesome" href="https://www.gmail.com/" target="_blank">
-              <i class="far fa-envelope"></i>
-            </a>
+              <a
+                class="circle__awesome"
+                href="https://www.gmail.com/"
+                target="_blank"
+              >
+                <i class="far fa-envelope"></i>
+              </a>
 
-            <a
-              class="circle__awesome"
-              href="https://www.linkedin.com/"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin-in"></i>
-            </a>
+              <a
+                class="circle__awesome"
+                href="https://www.linkedin.com/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
 
-            <a class="circle__awesome" href="https://www.github.com/" target="_blank">
-              <i class="fab fa-github-alt"></i>
-            </a>
+              <a
+                class="circle__awesome"
+                href="https://www.github.com/"
+                target="_blank"
+              >
+                <i class="fab fa-github-alt"></i>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -148,7 +161,9 @@
                   class="fill__input"
                   required=""
                 />
-                <label for="job" class="fill__label">Puesto</label>
+                <label for="job" class="fill__label"
+                  >Puesto<span class="fill__label--asterisk">*</span></label
+                >
 
                 <input
                   id="job"
@@ -250,6 +265,7 @@
                   <span class="span">Compartir en twitter</span>
                 </button>
               </section>
+              Pendiente actualizar
             </div>
           </fieldset>
 
@@ -258,7 +274,13 @@
     </main>
 
     <footer class="page__footer">
-      <small> &copy; Todos los derechos reservados </small>
+      <small class="copy"> Awesome profile-cards &copy; 2021 </small>
+      <img
+        src="./assets/images/logo-adalab.png"
+        alt="adalab logo"
+        title="adalab logo"
+        class="adalab__logo"
+      />
     </footer>
 
 
