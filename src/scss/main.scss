@@ -8,3 +8,11 @@
 @import "layout/footer";
 @import "pages/index";
 @import "pages/interactive";
+
+button {
+  background-color: $groot_green;
+  &:hover {
+    transform: scale(1.2);
+    background-color: $groot_brown;
+  }
+}
