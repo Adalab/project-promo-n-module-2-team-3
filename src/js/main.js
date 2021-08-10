@@ -1,6 +1,6 @@
 'use strict';
 
-console.log('>> Hey :)');
+// console.log('>> Hey :)');
 
 
 // 1
