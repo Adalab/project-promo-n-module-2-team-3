@@ -1,4 +1,6 @@
-@keyframes spin {
+//  animation: 3s infinite zaas; // para usarla
+
+@keyframes zaas {
   0% {
     background-color: $hospital_green;
     transform: scale3d(1.3, 1.3, 1.3);
@@ -13,5 +15,3 @@
     background-color: $groot_green;
   }
 }
-
-//  animation: 3s infinite spin; // para usarla
