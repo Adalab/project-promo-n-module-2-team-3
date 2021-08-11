@@ -25,7 +25,6 @@
 		display: flex;
 		flex-direction: column;
 		&--upload-btn {
-			background: #e17334;
 			border-radius: 6px;
 			color: $white-two;
 			font-family: $OpenSans;
@@ -36,6 +35,11 @@
 			line-height: 20px;
 			cursor: pointer;
 			margin-top: 10px;
+			background-color: $groot_green;
+			&:hover {
+				transform: scale(1.2);
+				background-color: $groot_brown;
+			}
 		}
 		&--hiddenField {
 			display: none;
@@ -60,6 +64,6 @@
 
 .profile__image,
 .profile__preview {
-background-position: center;
-background-size: cover;	
+	background-position: center;
+	background-size: cover;
 }
