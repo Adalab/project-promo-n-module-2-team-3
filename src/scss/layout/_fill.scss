@@ -21,46 +21,52 @@
 		display: flex;
 		flex-direction: column;
 	}
-	&__photo {
-        display: flex;
+
+
+ 	&__action{
+		display: flex;
 		flex-direction: column;
-		&--image {
-			display: flex;
-			flex-direction: row;
-		}
-		&--button {
-			position: relative;
-			background-color: #e17334;
-			width: 140px;
-			height: 30px;
-			border-radius: 6px;
-			&__text {
-				padding-top: 5px;
-				text-align: center;
-				color: $white-two;
-			}
-			&__input {
-				position: absolute;
-				top: 0px;
-				left: 0px;
-				right: 0px;
-				bottom: 0px;
-				width: 100%;
-				height: 100%;
-				opacity: 0;
-			}
-		}
-        &--box{
-            width: 30px;
-            height: 30px;
-            border: solid 1px $hospital-green;
-			margin-left: 180px;
-			margin-top: -20px;
-        }
-	}
+ 		
+ 			&--upload-btn{
+ 				background:#e17334;
+ 				border-radius: 6px;
+ 				border: 0;
+ 				color: $white-two;
+ 				box-sizing: border-box;
+ 				font-family: $OpenSans;
+ 				width: 140px;
+ 				height: 30px;
+ 				font-size: 14px;
+ 				padding: 10px 20px;
+ 				cursor: pointer;
+ 		}
+ 			&--hiddenField{
+ 				display: none;
+ 		}
+		 &--preview{
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			width: 30px;
+		   height: 30px;
+			  border: solid 1px $hospital-green;
+	   margin-left: 180px;
+	   margin-top: -20px;
+ 	}
+
+ }
+
+	
 	&__media {
 		display: flex;
 		flex-direction: column;
 	}
 }
 
+
+.profile__image,
+.profile__preview {
+background-position: center;
+background-size: cover;
+	
+}

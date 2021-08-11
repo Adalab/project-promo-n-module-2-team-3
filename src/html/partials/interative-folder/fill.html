@@ -6,8 +6,8 @@
   ></include>
   <div class="js_collapsable_content2">
     <div class="fill__data">
-      <label for="fullName" class="fill__label"
-        >Nombre completo<span class="fill__label--asterisk">*</span></label
+      <label for="fullName" class="fill__label">
+        Nombre completo<span class="fill__label--asterisk">*</span></label
       >
       <input
         id="fullName"
@@ -31,23 +31,22 @@
       />
     </div>
 
-    <div class="fill__photo">
+    <div class="fill__action">
       <label for="photo" class="fill__label"
         >Imagen de perfil<span class="fill__label--asterisk">*</span></label
       >
 
-      <div class="fill__photo--image">
-        <div class="fill__photo--button">
-          <p class="fill__photo--button__text">Añadir imagen</p>
-          <input
-            id="photo"
-            type="file"
-            name="photo"
-            class="fill__photo--button__input"
-          />
-          <div class="fill__photo--box"></div>
-        </div>
-      </div>
+      <label class="fill__action--upload-btn" for="img-selector"
+        >Añadir imagen</label
+      >
+      <input
+        type="file"
+        name=""
+        id="img-selector"
+        class="fill__action--hiddenField js__profile-upload-btn"
+      />
+
+      <div class="fill__action--preview js__profile-preview"></div>
     </div>
 
     <div class="fill__media">

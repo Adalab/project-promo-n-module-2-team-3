@@ -11,12 +11,12 @@
   align-content: center;
 }
 .main__img {
-  width: 250px;
-  height: 63px;
+  width: 300px;
+  height: 123px;
   margin: auto;
   @media all and (min-width: 768px) {
     width: 419px;
-    height: 105px;
+    height: 175px;
   }
 }
 .main__tittle {
@@ -109,9 +109,13 @@
   color: $white-two;
   font-size: 16px;
   font-weight: 600;
-  background-color: $dirty_blue;
+  background-color: $groot_green;
+  &:hover {
+    transform: scale(1.2);
+    background-color: $groot_brown;
+  }
   @media all and (min-width: 768px) {
-    margin: 186px 145px 0;
+    margin: 186px 145px 30px 145px;
     padding: 10px 20.5px 10px 19.5px;
   }
 }

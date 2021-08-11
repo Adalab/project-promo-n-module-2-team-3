@@ -73,9 +73,13 @@
     }
 
     .photo__example {
-      width: 240px;
-      height: 200px;
       margin-top: 15px;
+      background-position: center;
+	    background-size: cover;
+      &--logo{
+        width: 240px;
+        height: 200px;
+      }
     }
 
     .link__section {

@@ -1,6 +1,7 @@
 @import "core/variables";
 @import "core/reset";
 @import "core/mixins";
+@import "core/animation";
 @import "components/code";
 @import "components/links";
 @import "layout/page";
@@ -8,3 +9,11 @@
 @import "layout/footer";
 @import "pages/index";
 @import "pages/interactive";
+
+button {
+  background-color: $groot_green;
+  &:hover {
+    transform: scale(1.2);
+    background-color: $groot_brown;
+  }
+}
