@@ -57,12 +57,22 @@
               <h3 class="name__card">nombre apellido</h3>
               <h4 class="job__name">Front-end developer</h4>
             </div>
-            <img
+
+            <div class="photo__example">
+              <div
+                alt="yourlogo"
+                title="yourlogo"
+                class="photo__example--logo profile__image js__profile-image"
+                style="background-image: url(./assets/images/jessicawalsh.jpg)"
+              ></div>
+            </div>
+
+            <!-- <img profile__image
               src="./assets/images/jessicawalsh.jpg"
               class="photo__example"
               alt="yourlogo"
               title="yourlogo"
-            />
+            /> -->
 
             <div class="link__section">
               <a class="circle__awesome" href="" target="_blank">
@@ -152,12 +162,12 @@
 
             <div class="js_collapsable_content2">
               <div class="fill__data">
-                <label for="fullName" class="fill__label"
-                  >Nombre completo<span class="fill__label--asterisk">*</span></label
+                <label for="fullName" class="fill__label">
+                  Nombre completo<span class="fill__label--asterisk">*</span></label
                 >
                 <input
                   id="fullName"
-                  placeholder="Ej: Sally Jill"
+                  placeholder="Ej: I am Groot!"
                   type="text"
                   name="fullName"
                   class="fill__input"
@@ -169,7 +179,7 @@
 
                 <input
                   id="job"
-                  placeholder="Ej: Front-end unicorn"
+                  placeholder="Ej: I am Groot-developer"
                   type="text"
                   name="job"
                   class="fill__input"
@@ -182,18 +192,17 @@
                   >Imagen de perfil<span class="fill__label--asterisk">*</span></label
                 >
 
-                <div class="fill__photo--image">
-                  <div class="fill__photo--button">
-                    <p class="fill__photo--button__text">Añadir imagen</p>
-                    <input
-                      id="photo"
-                      type="file"
-                      name="photo"
-                      class="fill__photo--button__input"
-                    />
-                    <div class="fill__photo--box"></div>
-                  </div>
-                </div>
+                <label class="fill__photo--upload-btn" for="img-selector"
+                  >Añadir imagen</label
+                >
+                <input
+                  type="file"
+                  name=""
+                  id="img-selector"
+                  class="fill__photo--hiddenField js__profile-upload-btn"
+                />
+
+                <div class="fill__photo--preview js__profile-preview"></div>
               </div>
 
               <div class="fill__media">
@@ -202,7 +211,7 @@
                 >
                 <input
                   id="emailAddress"
-                  placeholder="Ej: sally-hill@gmail.com"
+                  placeholder="Ej: iamgroot@gmail.com"
                   type="email"
                   name="emailAddress"
                   class="fill__input"
@@ -224,7 +233,7 @@
                 >
                 <input
                   id="linkedin"
-                  placeholder="Ej: linkedin.com/sally.hill"
+                  placeholder="Ej: linkedin.com/Groot"
                   type="text"
                   name="linkedin"
                   class="fill__input"
@@ -235,7 +244,7 @@
                 >
                 <input
                   id="github"
-                  placeholder="Ej: @sally-hill"
+                  placeholder="Ej: @Groot!"
                   type="text"
                   name="github"
                   class="fill__input"
