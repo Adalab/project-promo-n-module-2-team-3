@@ -14,6 +14,9 @@
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 30px;
+  transition: height 0.6s ease; // transicion para el desplegable
+  overflow: hidden; // obligatorio para que haga bien rtansición
+  height: 115px; //obligatorio para que haga bien rtansición - se debe adaptar a cada sección
 
   &__subtitle {
     color: $gunmetal;
