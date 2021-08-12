@@ -1,4 +1,9 @@
+.page {
+  height: 100vh; // ok
+}
+
 .main_interactive {
+  height: 80%;
   background-image: linear-gradient(to bottom, $white-four, $white-two 9%);
   @include tablet {
     display: flex;
