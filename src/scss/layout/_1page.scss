@@ -7,3 +7,11 @@ body {
   background-repeat: no-repeat;
   background-image: linear-gradient(to bottom, $groot_green, $groot_brown 50%);
 }
+
+button {
+  background-color: $groot_green;
+  &:hover {
+    transform: scale(1.2);
+    background-color: $groot_brown;
+  }
+}

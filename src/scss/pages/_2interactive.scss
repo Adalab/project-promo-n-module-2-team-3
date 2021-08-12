@@ -1,9 +1,10 @@
-.page {
+.page_interactive {
   height: 100vh; // ok
 }
 
 .main_interactive {
   height: 80%;
+  overflow: hidden; // luego borrar
   background-image: linear-gradient(to bottom, $white-four, $white-two 9%);
   @include tablet {
     display: flex;
@@ -76,11 +77,11 @@ span {
 @import "layout/share";
 // SHARE
 
-@import "layout/result";
-// RESULT
-
 @import "layout/fill";
 // FILL
+
+@import "layout/result";
+// RESULT
 
 .hidden {
   height: 0;

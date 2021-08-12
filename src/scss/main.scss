@@ -2,18 +2,10 @@
 @import "core/reset";
 @import "core/mixins";
 @import "core/animation";
-@import "components/code";
-@import "components/links";
-@import "layout/page";
+// @import "components/code"; vacio
+// @import "components/links"; vacio
+@import "layout/1page";
 @import "layout/header";
+@import "pages/2index";
+@import "pages/2interactive";
 @import "layout/footer";
-@import "pages/index";
-@import "pages/interactive";
-
-button {
-  background-color: $groot_green;
-  &:hover {
-    transform: scale(1.2);
-    background-color: $groot_brown;
-  }
-}
