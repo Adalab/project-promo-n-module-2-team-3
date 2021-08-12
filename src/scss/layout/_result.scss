@@ -41,6 +41,7 @@
   .card__example {
     padding-top: 2px;
     width: 240px;
+    overflow: hidden; // hace que lo que sobre pasa no se muestre - Pendiente ver como hacer para que se ajuste el tamaño del texto al contenedor si es un nombre largo
     height: 329px;
     background-color: white;
     margin-top: 20px;
@@ -75,8 +76,8 @@
     .photo__example {
       margin-top: 15px;
       background-position: center;
-	    background-size: cover;
-      &--logo{
+      background-size: cover;
+      &--logo {
         width: 240px;
         height: 200px;
       }

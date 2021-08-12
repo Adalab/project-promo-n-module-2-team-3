@@ -1,10 +1,19 @@
 //variable
 const formElement = document.querySelector(".js_form");
+const nameElement = document.querySelector(".js_name");
+const nameResultElement = document.querySelector(".js_result_name");
+const linkTelElement = document.querySelector(".js_linktel");
+const linkTelResultElement = document.querySelector(".js_result_linktel");
 
 //handle
+function handleKeyupInput(event) {
+  nameResultElement.innerHTML = nameElement.value;
+  const telefono = `tel: ${linkTelElement.value}`; //propiedad nueva
+  linkTelResultElement.setAttribute("href", telefono);
+}
 
 //Listener
-formElement.addEventListener("keyup", handleCollapsableTarget);
+formElement.addEventListener("keyup", handleKeyupInput);
 
 //imagen interactive
 const fr = new FileReader();
