@@ -1,9 +1,19 @@
 .page_interactive {
-  height: 100vh; // ok
+  max-height: 1500px; //pendiente ------------------------------------------------------
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  @include tablet {
+    // min-height: 1150px;
+    height: 100%;
+  }
 }
 
 .main_interactive {
-  height: 80%;
+  height: 80vh; //pendiente--------------------------------------------------------------------------
+  min-height: 800px;
   overflow: hidden; // luego borrar
   background-image: linear-gradient(to bottom, $white-four, $white-two 9%);
   @include tablet {

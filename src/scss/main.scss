@@ -4,8 +4,8 @@
 @import "core/animation";
 // @import "components/code"; vacio
 // @import "components/links"; vacio
-@import "layout/1page";
+@import "layout/1page"; //error margen posiblemente aqui--------------
 @import "layout/header";
 @import "pages/2index";
-@import "pages/2interactive";
-@import "layout/footer";
+@import "pages/2interactive"; // min-height?
+@import "layout/footer"; // posible error
