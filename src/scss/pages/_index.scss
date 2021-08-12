@@ -3,9 +3,9 @@
 }
 .main {
   width: 100%;
-  height: 90%; //margen no visible
-  min-height: 458px;
-  padding: 94px 26px 30px 25px;
+  height: 90%; //margen no visible el otro 10% pertenece al footer
+  min-height: 458px; //no hace caso
+  padding: 95px 25px 30px 25px;
   background-color: $white-four;
   margin: auto;
   display: flex;
