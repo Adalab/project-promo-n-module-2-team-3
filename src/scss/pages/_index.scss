@@ -28,6 +28,11 @@ body {
     height: 175px;
   }
 }
+.main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .main__tittle {
   width: 223px;
   height: 24px;
