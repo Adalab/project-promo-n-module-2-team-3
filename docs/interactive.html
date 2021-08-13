@@ -34,267 +34,267 @@
   </head>
 
   <body>
-    <header class="header">
-      <a href="./index.html" target="_blank">
-        <img
-          src="./assets/images/awesome-logo-card.png"
-          alt="Awesome profile cards"
-          class="header__img"
-        />
-      </a>
-    </header>
+    <div class="page_interactive">
+      <header class="header">
+        <a href="./index.html" target="_blank">
+          <img
+            src="./assets/images/awesome-logo-card.png"
+            alt="Awesome profile cards"
+            class="header__img"
+          />
+        </a>
+      </header>
 
+      <main class="main_interactive">
+        <section class="card__first__view">
+          <div class="card__result">
+            <button class="button__reset">
+              <i class="far fa-trash-alt"></i> reset
+            </button>
 
-    <main class="main_interactive">
-      <section class="card__first__view">
-        <div class="card__result">
-          <button class="button__reset">
-            <i class="far fa-trash-alt"></i> reset
-          </button>
+            <div class="card__example">
+              <div class="text__section">
+                <h3 class="name__card js_result_name">nombre apellido</h3>
+                <h4 class="job__name">Front-end developer</h4>
+              </div>
 
-          <div class="card__example">
-            <div class="text__section">
-              <h3 class="name__card">nombre apellido</h3>
-              <h4 class="job__name">Front-end developer</h4>
-            </div>
+              <div class="photo__example">
+                <div
+                  alt="yourlogo"
+                  title="yourlogo"
+                  class="photo__example--logo profile__image js__profile-image"
+                  style="background-image: url(./assets/images/jessicawalsh.jpg)"
+                ></div>
+              </div>
 
-            <div class="photo__example">
-              <div
+              <!-- <img profile__image
+                src="./assets/images/jessicawalsh.jpg"
+                class="photo__example"
                 alt="yourlogo"
                 title="yourlogo"
-                class="photo__example--logo profile__image js__profile-image"
-                style="background-image: url(./assets/images/jessicawalsh.jpg)"
-              ></div>
-            </div>
+              /> -->
 
-            <!-- <img profile__image
-              src="./assets/images/jessicawalsh.jpg"
-              class="photo__example"
-              alt="yourlogo"
-              title="yourlogo"
-            /> -->
+              <div class="link__section js_result_linktel">
+                <a class="circle__awesome" href="tel:" target="_blank">
+                  <i class="fas fa-mobile-alt"></i>
+                </a>
 
-            <div class="link__section">
-              <a class="circle__awesome" href="" target="_blank">
-                <i class="fas fa-mobile-alt"></i>
-              </a>
+                <a
+                  class="circle__awesome"
+                  href="https://www.gmail.com/"
+                  target="_blank"
+                >
+                  <i class="far fa-envelope"></i>
+                </a>
 
-              <a
-                class="circle__awesome"
-                href="https://www.gmail.com/"
-                target="_blank"
-              >
-                <i class="far fa-envelope"></i>
-              </a>
+                <a
+                  class="circle__awesome"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
 
-              <a
-                class="circle__awesome"
-                href="https://www.linkedin.com/"
-                target="_blank"
-              >
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-
-              <a
-                class="circle__awesome"
-                href="https://www.github.com/"
-                target="_blank"
-              >
-                <i class="fab fa-github-alt"></i>
-              </a>
+                <a
+                  class="circle__awesome"
+                  href="https://www.github.com/"
+                  target="_blank"
+                >
+                  <i class="fab fa-github-alt"></i>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <form class="form">
-        <section class="select">
-          <fieldset class="desing">
-            <section class="section--title desing__title">
-              <i class="far fa-object-ungroup icon"></i>
-              <h3 class="title title2">Diseña</h3>
-              <i class="fas fa-chevron-down arrow"></i>
-            </section>
-
-            <section class="options js_collapsable_content">
-              <h6 class="options__subtitle subtitle">Colores</h6>
-              <div class="radio">
-                <div class="option">
-                  <label for="color"> </label>
-                  <input id="color" type="radio" name="color" value="blue_scale" />
-                  <div class="colors-container">
-                    <div class="colors-container__color dark_green_blue"></div>
-                    <div class="colors-container__color dirty_blue"></div>
-                    <div class="colors-container__color hospital_green"></div>
-                  </div>
-                </div>
-
-                <div class="option">
-                  <label for="color"> </label>
-                  <input id="color" type="radio" name="color" value="red_scale" />
-                  <div class="colors-container">
-                    <div class="colors-container__color dried_blood"></div>
-                    <div class="colors-container__color rusty_red"></div>
-                    <div class="colors-container__color tomato"></div>
-                  </div>
-                </div>
-
-                <div class="option">
-                  <label for="color"> </label>
-                  <input id="color" type="radio" name="color" value="mix_scale" />
-                  <div class="colors-container">
-                    <div class="colors-container__color slate"></div>
-                    <div class="colors-container__color faded_orange"></div>
-                    <div class="colors-container__color light_grey_blue"></div>
-                  </div>
-                </div>
-
-              </div>
-            </section>
-          </fieldset>
-
-          <fieldset class="fill">
-            <section class="section--title ">
-              <i class="far fa-keyboard icon"></i>
-              <h3 class="title ">Rellena</h3>
-              <i class="fas fa-chevron-down arrow"></i>
-            </section>
-
-            <div class="js_collapsable_content2">
-              <div class="fill__data">
-                <label for="fullName" class="fill__label">
-                  Nombre completo<span class="fill__label--asterisk">*</span></label
-                >
-                <input
-                  id="fullName"
-                  placeholder="Ej: I am Groot!"
-                  type="text"
-                  name="fullName"
-                  class="fill__input"
-                  required=""
-                />
-                <label for="job" class="fill__label"
-                  >Puesto<span class="fill__label--asterisk">*</span></label
-                >
-
-                <input
-                  id="job"
-                  placeholder="Ej: I am Groot-developer"
-                  type="text"
-                  name="job"
-                  class="fill__input"
-                  required=""
-                />
-              </div>
-
-              <div class="fill__photo">
-                <label for="photo" class="fill__label"
-                  >Imagen de perfil<span class="fill__label--asterisk">*</span></label
-                >
-
-                <label class="fill__photo--upload-btn" for="img-selector"
-                  >Añadir imagen</label
-                >
-                <input
-                  type="file"
-                  name=""
-                  id="img-selector"
-                  class="fill__photo--hiddenField js__profile-upload-btn"
-                />
-
-                <div class="fill__photo--preview js__profile-preview"></div>
-              </div>
-
-              <div class="fill__media">
-                <label for="emailAddress" class="fill__label"
-                  >Email<span class="fill__label--asterisk">*</span></label
-                >
-                <input
-                  id="emailAddress"
-                  placeholder="Ej: iamgroot@gmail.com"
-                  type="email"
-                  name="emailAddress"
-                  class="fill__input"
-                  required=""
-                />
-                <label for="phone" class="fill__label"
-                  >Teléfono<span class="fill__label--asterisk">*</span></label
-                >
-                <input
-                  id="phone"
-                  placeholder="Ej: 555-55-55-55"
-                  type="tel"
-                  name="phone"
-                  class="fill__input"
-                  required=""
-                />
-                <label for="linkedin" class="fill__label"
-                  >Linkedin<span class="fill__label--asterisk">*</span></label
-                >
-                <input
-                  id="linkedin"
-                  placeholder="Ej: linkedin.com/Groot"
-                  type="text"
-                  name="linkedin"
-                  class="fill__input"
-                  required=""
-                />
-                <label for="github" class="fill__label"
-                  >Github<span class="fill__label--asterisk">*</span></label
-                >
-                <input
-                  id="github"
-                  placeholder="Ej: @Groot!"
-                  type="text"
-                  name="github"
-                  class="fill__input"
-                  required=""
-                />
-              </div>
-            </div>
-          </fieldset>
-
-          <fieldset class="share">
-            <section class="section--title ">
-              <i class="fas fa-share-alt icon"></i>
-              <h3 class="title ">Comparte</h3>
-              <i class="fas fa-chevron-down arrow"></i>
-            </section>
-
-            <div class="js_collapsable_content3">
-              <button class="share--button">
-                <i class="far fa-id-card"></i>
-                <span> Crear tarjeta</span>
-              </button>
-
-              <section class="creada">
-                <h3 class="creada--title">La tarjecta ha sido creada:</h3>
-                <p class="creada--p">https://awesome-profile-card.com?id=A456DF0001</p>
-                <!-- pendiente hacerlo interactivo -->
-                <button class="creada--button">
-                  <i class="fab fa-twitter"></i>
-                  <span class="span">Compartir en twitter</span>
-                </button>
-              </section>
-            </div>
-          </fieldset>
-
         </section>
-      </form>
-    </main>
 
-    <footer class="page__footer">
-      <small class="copy"> Awesome profile-cards &copy; 2021 </small>
-      <a href="https://adalab.es/" target="_blank"
-        ><img
-          src="./assets/images/logo-adalab.png"
-          alt="adalab logo"
-          title="adalab logo"
-          class="adalab__logo"
-      /></a>
-    </footer>
+        <form class="form js_form">
+          <section class="select">
+            <fieldset class="desing">
+              <section class="section--title desing__title">
+                <i class="far fa-object-ungroup icon"></i>
+                <h3 class="title title2">Diseña</h3>
+                <i class="fas fa-chevron-down arrow"></i>
+              </section>
 
+              <section class="options js_collapsable_content">
+                <h6 class="options__subtitle subtitle">Colores</h6>
+                <div class="radio">
+                  <div class="option">
+                    <label for="color"> </label>
+                    <input id="color" type="radio" name="color" value="blue_scale" />
+                    <div class="colors-container">
+                      <div class="colors-container__color dark_green_blue"></div>
+                      <div class="colors-container__color dirty_blue"></div>
+                      <div class="colors-container__color hospital_green"></div>
+                    </div>
+                  </div>
 
+                  <div class="option">
+                    <label for="color"> </label>
+                    <input id="color" type="radio" name="color" value="red_scale" />
+                    <div class="colors-container">
+                      <div class="colors-container__color dried_blood"></div>
+                      <div class="colors-container__color rusty_red"></div>
+                      <div class="colors-container__color tomato"></div>
+                    </div>
+                  </div>
+
+                  <div class="option">
+                    <label for="color"> </label>
+                    <input id="color" type="radio" name="color" value="mix_scale" />
+                    <div class="colors-container">
+                      <div class="colors-container__color slate"></div>
+                      <div class="colors-container__color faded_orange"></div>
+                      <div class="colors-container__color light_grey_blue"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </section>
+            </fieldset>
+
+            <fieldset class="fill">
+              <section class="section--title ">
+                <i class="far fa-keyboard icon"></i>
+                <h3 class="title ">Rellena</h3>
+                <i class="fas fa-chevron-down arrow"></i>
+              </section>
+
+              <div class="js_collapsable_content2">
+                <div class="fill__data">
+                  <label for="fullName" class="fill__label">
+                    Nombre completo<span class="fill__label--asterisk">*</span></label
+                  >
+                  <input
+                    id="fullName"
+                    placeholder="Ej: I am Groot!"
+                    type="text"
+                    name="fullName"
+                    class="fill__input js_name"
+                    required=""
+                  />
+                  <label for="job" class="fill__label"
+                    >Puesto<span class="fill__label--asterisk">*</span></label
+                  >
+
+                  <input
+                    id="job"
+                    placeholder="Ej: I am Groot-developer"
+                    type="text"
+                    name="job"
+                    class="fill__input"
+                    required=""
+                  />
+                </div>
+
+                <div class="fill__photo">
+                  <label for="photo" class="fill__label"
+                    >Imagen de perfil<span class="fill__label--asterisk">*</span></label
+                  >
+
+                  <label class="fill__photo--upload-btn" for="img-selector"
+                    >Añadir imagen</label
+                  >
+                  <input
+                    type="file"
+                    name=""
+                    id="img-selector"
+                    class="fill__photo--hiddenField js__profile-upload-btn"
+                  />
+
+                  <div class="fill__photo--preview js__profile-preview"></div>
+                </div>
+
+                <div class="fill__media">
+                  <label for="emailAddress" class="fill__label"
+                    >Email<span class="fill__label--asterisk">*</span></label
+                  >
+                  <input
+                    id="emailAddress"
+                    placeholder="Ej: iamgroot@gmail.com"
+                    type="email"
+                    name="emailAddress"
+                    class="fill__input"
+                    required=""
+                  />
+                  <label for="phone" class="fill__label"
+                    >Teléfono<span class="fill__label--asterisk">*</span></label
+                  >
+                  <input
+                    id="phone"
+                    placeholder="Ej: 555-55-55-55"
+                    type="tel"
+                    name="phone"
+                    class="fill__input js_linktel"
+                    required=""
+                  />
+                  <label for="linkedin" class="fill__label"
+                    >Linkedin<span class="fill__label--asterisk">*</span></label
+                  >
+                  <input
+                    id="linkedin"
+                    placeholder="Ej: linkedin.com/Groot"
+                    type="text"
+                    name="linkedin"
+                    class="fill__input"
+                    required=""
+                  />
+                  <label for="github" class="fill__label"
+                    >Github<span class="fill__label--asterisk">*</span></label
+                  >
+                  <input
+                    id="github"
+                    placeholder="Ej: @Groot!"
+                    type="text"
+                    name="github"
+                    class="fill__input"
+                    required=""
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="share">
+              <section class="section--title ">
+                <i class="fas fa-share-alt icon"></i>
+                <h3 class="title ">Comparte</h3>
+                <i class="fas fa-chevron-down arrow"></i>
+              </section>
+
+              <div class="js_collapsable_content3">
+                <button class="share--button">
+                  <i class="far fa-id-card"></i>
+                  <span> Crear tarjeta</span>
+                </button>
+
+                <section class="creada">
+                  <h3 class="creada--title">La tarjecta ha sido creada:</h3>
+                  <p class="creada--p">https://awesome-profile-card.com?id=A456DF0001</p>
+                  <!-- pendiente hacerlo interactivo -->
+                  <button class="creada--button">
+                    <i class="fab fa-twitter"></i>
+                    <span class="span">Compartir en twitter</span>
+                  </button>
+                </section>
+              </div>
+            </fieldset>
+
+          </section>
+        </form>
+      </main>
+      <footer class="page__footer">
+        <small class="copy"> Awesome profile-cards &copy; 2021 </small>
+        <a href="https://adalab.es/" target="_blank"
+          ><img
+            src="./assets/images/logo-adalab.png"
+            alt="adalab logo"
+            title="adalab logo"
+            class="adalab__logo"
+        /></a>
+      </footer>
+
+    </div>
+    <!-- Java Script -->
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
