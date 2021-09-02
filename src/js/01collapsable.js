@@ -1,13 +1,13 @@
 //Variables
-const collapsableContent = document.querySelector(".js_collapsable_content");
-const collapsableTitle = document.querySelector(".desing__title");
-const collapsableContent2 = document.querySelector(".js_collapsable_content2");
-const collapsableContent3 = document.querySelector(".js_collapsable_content3");
+const collapsableContent = document.querySelector('.js_collapsable_content');
+const collapsableTitle = document.querySelector('.desing__title');
+const collapsableContent2 = document.querySelector('.js_collapsable_content2');
+const collapsableContent3 = document.querySelector('.js_collapsable_content3');
 
 //Handler
 function handleCollapsableTarget(event) {
-  console.log("hey");
-  collapsableContent.classList.toggle("hidden");
+  console.log('hey');
+  collapsableContent.classList.toggle('hidden');
 }
 
 // if (event.currentTarget.) {
@@ -21,4 +21,4 @@ function handleCollapsableTarget(event) {
 // }
 
 //Listener
-collapsableTitle.addEventListener("click", handleCollapsableTarget);
+collapsableTitle.addEventListener('click', handleCollapsableTarget);
