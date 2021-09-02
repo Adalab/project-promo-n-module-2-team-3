@@ -1,11 +1,12 @@
 body {
-  width: 100%;
+  // width: 100%;
   max-width: 1500px;
 
-  height: 100%; //importante poner % en vez de vh para que ocupe el background todo el tamaño-----------------------
-  margin-left: auto;
-  margin-right: auto;
-  // margin-top: auto;
+  // height: 100%; //importante poner % en vez de vh para que ocupe el background todo el tamaño-----------------------
+  // margin-left: auto;
+  // margin-right: auto;
+  // margin:auto;
+  //  margin-top: auto;
   // margin-bottom: auto;------------------------no hace nada---------------
   background-repeat: no-repeat;
   background-image: linear-gradient(to bottom, $groot_green, $groot_brown 50%);

@@ -10,9 +10,9 @@ function handleCollapsableTarget(event) {
   collapsableContent.classList.toggle('hidden');
 }
 
-// if (event.currentTarget.) {
-//     collapsableContent.classList.toggle('hidden');
-//     }
+//  if (event.currentTarget.) {
+//      collapsableContent.classList.toggle('hidden');
+//      }
 // else if (collapsableContent2.classList.contains('hidden')) {
 //         collapsableContent2.classList.toggle('hidden');
 //     }
