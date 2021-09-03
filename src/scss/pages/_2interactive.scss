@@ -70,10 +70,6 @@ fieldset {
   }
   .arrow {
     float: left;
-    &:hover {
-      transform: rotate(180deg);
-      padding-right: 168px;
-    }
   }
 }
 
@@ -81,20 +77,25 @@ span {
   padding-left: 9px;
 }
 
-@import "layout/design";
+@import 'layout/design';
 // DESIGN
 
-@import "layout/share";
+@import 'layout/share';
 // SHARE
 
-@import "layout/fill";
+@import 'layout/fill';
 // FILL
 
-@import "layout/result";
+@import 'layout/result';
 // RESULT
 
 .hidden {
   height: 0;
   margin-bottom: 0px;
   overflow: hidden;
+}
+
+.rotateArrow {
+  transform: rotate(180deg);
+  padding-right: 168px;
 }

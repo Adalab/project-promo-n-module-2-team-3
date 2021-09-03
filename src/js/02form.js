@@ -1,3 +1,5 @@
+
+'use strict';
 //variable
 const formElement = document.querySelector(".js_form");
 const nameElement = document.querySelector(".js_name");
