@@ -1,33 +1,33 @@
 
 'use strict';
 //variable
-const formElement = document.querySelector(".js_form");
-const nameElement = document.querySelector(".js_name");
-const nameResultElement = document.querySelector(".js_result_name");
-const linkTelElement = document.querySelector(".js_linktel");
-const linkTelResultElement = document.querySelector(".js_result_linktel");
+const formElement = document.querySelector('.js_form');
+const nameElement = document.querySelector('.js_name');
+const nameResultElement = document.querySelector('.js_result_name');
+const linkTelElement = document.querySelector('.js_linktel');
+const linkTelResultElement = document.querySelector('.js_result_linktel');
 
 //handle
 function handleKeyupInput(event) {
   nameResultElement.innerHTML = nameElement.value;
   const telefono = `tel: ${linkTelElement.value}`; //propiedad nueva
-  linkTelResultElement.setAttribute("href", telefono);
+  linkTelResultElement.setAttribute('href', telefono);
 }
 
 //Listener
-formElement.addEventListener("keyup", handleKeyupInput);
+formElement.addEventListener('keyup', handleKeyupInput);
 
 //imagen interactive
 const fr = new FileReader();
-const fileField = document.querySelector(".js__profile-upload-btn");
-const profileImage = document.querySelector(".js__profile-image");
-const profilePreview = document.querySelector(".js__profile-preview");
+const fileField = document.querySelector('.js__profile-upload-btn');
+const profileImage = document.querySelector('.js__profile-image');
+const profilePreview = document.querySelector('.js__profile-preview');
 
-//Recoge el archivo añadido al campo de tipo "file" y lo carga en nuestro objeto FileReader para que lo convierta a algo con lo que podamos trabajar. Añade un listener al FR para que ejecute una función al tener los datos listos @param {evento} e
+//Recoge el archivo añadido al campo de tipo 'file' y lo carga en nuestro objeto FileReader para que lo convierta a algo con lo que podamos trabajar. Añade un listener al FR para que ejecute una función al tener los datos listos @param {evento} e
 
 function getImage(e) {
   const myFile = e.currentTarget.files[0];
-  fr.addEventListener("load", writeImage);
+  fr.addEventListener('load', writeImage);
   fr.readAsDataURL(myFile);
 }
 
@@ -46,7 +46,7 @@ function writeImage() {
 }
 
 /**
- * Genera un click automático en nuesto campo de tipo "file"
+ * Genera un click automático en nuesto campo de tipo 'file'
  * que está oculto
  */
 function fakeFileClick() {
@@ -58,4 +58,4 @@ function fakeFileClick() {
  * - al botón visible para generar el click automático
  * - al campo oculto para cuando cambie su value
  */
-fileField.addEventListener("change", getImage);
+fileField.addEventListener('change', getImage);

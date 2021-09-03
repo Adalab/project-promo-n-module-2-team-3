@@ -31,13 +31,26 @@ function arrow(){
 
 function conditional(event){
 
+  let titleEl = event.currentTarget;
+  console.log(titleEl);
+  titleEl.classList.add('show');
+
+
+
   for (let i = 0; i < arrowAll.length; i++) {
-    const titleEl = collapsableTitle[i];
+    titleEl = collapsableTitle[i];
+
+
+    if(titleEl.classList.contains('hidden') === true ){
+      titleEl.classList.remove('hidden');
+
+
+    }
+
+
 
   }
-  if(collapsable[i].classList.contains('hidden') === true ){
-    collapsable[i].classList.remove('hidden');
-  }
+
 }
 
 //Esta es la función global la cual usaremos para realizar el evento
