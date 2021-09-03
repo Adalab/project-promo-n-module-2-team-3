@@ -29,6 +29,8 @@ function arrow(){
   }
 }
 
+/////////////////////////////////////////////////NOS HEMOS QUEDADO CREANDO ESTA FUNCIÓN QUE ES LA DE LOS COLLAPSABLES, Y LO QUE QUEREMOS HACER ES QUE SOLO SE DESPLIEGUE UNO MIENTRAS LOS DEMÁS ESTÁN CERRADOS//////////////////////////
+
 function conditional(event){
 
   let titleEl = event.currentTarget;
