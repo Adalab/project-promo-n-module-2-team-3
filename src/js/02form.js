@@ -1,4 +1,3 @@
-
 'use strict';
 //variable
 const formElement = document.querySelector('.js_form');
@@ -45,13 +44,13 @@ function writeImage() {
   profilePreview.style.backgroundImage = `url(${fr.result})`;
 }
 
-/**
- * Genera un click automático en nuesto campo de tipo 'file'
- * que está oculto
- */
-function fakeFileClick() {
-  fileField.click();
-}
+// /**
+//  * Genera un click automático en nuesto campo de tipo 'file'
+//  * que está oculto
+//  */
+// function fakeFileClick() {
+//   fileField.click();
+// }
 
 /**
  * Añadimos los listeners necesarios:
