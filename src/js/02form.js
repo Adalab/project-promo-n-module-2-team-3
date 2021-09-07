@@ -1,22 +1,37 @@
 'use strict';
 //variable
 const formElement = document.querySelector('.js_form');
-const nameElement = document.querySelector('.js_name');
-const nameResultElement = document.querySelector('.js_result_name');
-const linkTelElement = document.querySelector('.js_linktel');
-const linkTelResultElement = document.querySelector('.js_result_linktel');
+const inputTextAll = document.querySelectorAll('.js_text_type');
+const resultTextAll = document.querySelectorAll('.js_text_result');
+const inputLinkAll = document.querySelectorAll('.js_link_type');
+const resultLinkAll = document.querySelectorAll('.js_link_result');
 
 //handle
-function handleKeyupInput(event) {
-  nameResultElement.innerHTML = nameElement.value;
-  const telefono = `tel: ${linkTelElement.value}`; //propiedad nueva
-  linkTelResultElement.setAttribute('href', telefono);
+function text() {
+  for (let i = 0; i < inputTextAll.length; i++) {
+    if (inputTextAll[i].value !== '') {
+      resultTextAll[i].innerHTML = inputTextAll[i].value; // pendiente conseguir que al borrar y esté vacio vuelva el placeholder--------------------------------------------------
+    }
+  }
+}
+
+function link() {
+  for (let i = 0; i < inputLinkAll.length; i++) {
+    resultLinkAll[i].dataset[id] = inputLinkAll[i].dataset[id].value;
+    //const telefono = `tel: ${linkTelElement.value}`; //propiedad nueva--------------pendiente mirar Linkedin + Github
+    //linkTelResultElement.setAttribute('href', telefono);
+  }
+}
+
+function handleKeyupInput() {
+  text();
+  link();
 }
 
 //Listener
 formElement.addEventListener('keyup', handleKeyupInput);
 
-//imagen interactive
+//---------------------------------------------------------------Imagen interactive
 const fr = new FileReader();
 const fileField = document.querySelector('.js__profile-upload-btn');
 const profileImage = document.querySelector('.js__profile-image');
