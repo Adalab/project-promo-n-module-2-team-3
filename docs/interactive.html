@@ -110,13 +110,13 @@
         <form class="form js_form">
           <section class="select">
             <fieldset class="desing">
-              <section class="section--title desing__title">
+              <section class="section--title desing__title js_collapsable_title">
                 <i class="far fa-object-ungroup icon"></i>
                 <h3 class="title title2">Diseña</h3>
-                <i class="fas fa-chevron-down arrow"></i>
+                <i class="fas fa-chevron-down arrow js_arrow"></i>
               </section>
 
-              <section class="options js_collapsable_content">
+              <section class="options js_collapsable_content hidden">
                 <h6 class="options__subtitle subtitle">Colores</h6>
                 <div class="radio">
                   <div class="option">
@@ -154,13 +154,13 @@
             </fieldset>
 
             <fieldset class="fill">
-              <section class="section--title ">
+              <section class="section--title  js_collapsable_title">
                 <i class="far fa-keyboard icon"></i>
                 <h3 class="title ">Rellena</h3>
-                <i class="fas fa-chevron-down arrow"></i>
+                <i class="fas fa-chevron-down arrow js_arrow"></i>
               </section>
 
-              <div class="js_collapsable_content2">
+              <section class="js_collapsable_content hidden">
                 <div class="fill__data">
                   <label for="fullName" class="fill__label">
                     Nombre completo<span class="fill__label--asterisk">*</span></label
@@ -232,6 +232,7 @@
                     >Linkedin<span class="fill__label--asterisk">*</span></label
                   >
                   <input
+                    div
                     id="linkedin"
                     placeholder="Ej: linkedin.com/Groot"
                     type="text"
@@ -251,17 +252,17 @@
                     required=""
                   />
                 </div>
-              </div>
+              </section>
             </fieldset>
 
             <fieldset class="share">
-              <section class="section--title ">
+              <section class="section--title  js_collapsable_title">
                 <i class="fas fa-share-alt icon"></i>
                 <h3 class="title ">Comparte</h3>
-                <i class="fas fa-chevron-down arrow"></i>
+                <i class="fas fa-chevron-down arrow js_arrow"></i>
               </section>
 
-              <div class="js_collapsable_content3">
+              <section class="js_collapsable_content hidden">
                 <button class="share--button">
                   <i class="far fa-id-card"></i>
                   <span> Crear tarjeta</span>
@@ -276,7 +277,7 @@
                     <span class="span">Compartir en twitter</span>
                   </button>
                 </section>
-              </div>
+              </section>
             </fieldset>
 
           </section>
