@@ -1,7 +1,9 @@
 'use strict'; //acordarnos de borrar
 //Variables
 //En este caso las variables estarán formadas por arrays, por ello usaremos el querySelectorAll
-const collapsableContent = document.querySelectorAll('.js_collapsable_content');
+const collapsableContentAll = document.querySelectorAll(
+  '.js_collapsable_content'
+);
 const collapsableTitleList = document.querySelectorAll('.js_collapsable_title');
 const arrowAll = document.querySelectorAll('.js_arrow');
 
@@ -29,8 +31,8 @@ function handleCollapsable(event) {
   //en la siguiente variable seleccione todos los titulos para saber cual es el nuevo que tiene la clace "clicado"
 
   //faltará enlazar los arrays de titulos con los arrays de contenido --------------------------------
-  for (let i = 0; i < collapsableContent.length; i++) {
-    let collapsableContentEl = collapsableContent[i];
+  for (let i = 0; i < collapsableContentAll.length; i++) {
+    let collapsableContentEl = collapsableContentAll[i];
     //aqui debemos preguntar si el titulo esta clicado, pero los titulos al ser una lista se debe acceder
     //a cada posicion con [i]
     if (collapsableTitleList[i].classList.contains('clicado') === true) {
