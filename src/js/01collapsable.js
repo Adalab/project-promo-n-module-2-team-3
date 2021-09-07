@@ -8,7 +8,6 @@ const collapsableTitleList = document.querySelectorAll('.js_collapsable_title');
 const arrowAll = document.querySelectorAll('.js_arrow');
 
 //Handler
-//Empezaremos crando la función del collapsable
 
 function arrow() {
   for (let i = 0; i < arrowAll.length; i++) {
@@ -50,7 +49,7 @@ function handleCollapsable(event) {
 }
 
 //Volveremos a hacer otro bucle, pero en este caso sacaremos los elementos del titulo
-for (let titleEl of collapsableTitle) {
+for (let titleEl of collapsableTitleList) {
   //En estos elementos realizaremos el evento deseado
   titleEl.addEventListener('click', handleCollapsable);
 }
