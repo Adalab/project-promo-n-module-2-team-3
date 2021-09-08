@@ -10,17 +10,24 @@ const resultLinkAll = document.querySelectorAll('.js_link_result');
 function text() {
   for (let i = 0; i < inputTextAll.length; i++) {
     if (inputTextAll[i].value !== '') {
-      resultTextAll[i].innerHTML = inputTextAll[i].value; // pendiente conseguir que al borrar y esté vacio vuelva el placeholder--------------------------------------------------
+      resultTextAll[i].innerHTML = inputTextAll[i].value;  
+    }
+    else if(inputTextAll[i].name === 'fullName') {
+      resultTextAll[i].innerHTML = 'Nombre Apellido';
+    }
+    else if(inputTextAll[i].name === 'job') {
+      resultTextAll[i].innerHTML = 'Front-End Developer';
     }
   }
 }
 
 function link() {
-  for (let i = 0; i < inputLinkAll.length; i++) {
-    resultLinkAll[i].dataset[id] = inputLinkAll[i].dataset[id].value;
-    //const telefono = `tel: ${linkTelElement.value}`; //propiedad nueva--------------pendiente mirar Linkedin + Github
-    //linkTelResultElement.setAttribute('href', telefono);
-  }
+  resultLinkAll[0].href = 'tel: '+inputLinkAll[1].value;
+  resultLinkAll[1].href = 'mailto:'+inputLinkAll[0].value;
+  resultLinkAll[2].href = 'https://'+inputLinkAll[2].value;
+  resultLinkAll[3].href = 'https://github.com/'+inputLinkAll[3].value;
+
+
 }
 
 function handleKeyupInput() {
