@@ -30,7 +30,6 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
   </head>
 
   <body>
@@ -48,14 +47,14 @@
       <main class="main_interactive">
         <section class="card__first__view">
           <div class="card__result">
-            <button class="button__reset">
+            <button class="button__reset js_reset">
               <i class="far fa-trash-alt"></i> reset
             </button>
 
             <div class="card__example">
               <div class="text__section">
-                <h3 class="name__card js_result_name">nombre apellido</h3>
-                <h4 class="job__name">Front-end developer</h4>
+                <h3 class="name__card js_text_result">Nombre Apellido</h3>
+                <h4 class="job__name js_text_result">Front-end developer</h4>
               </div>
 
               <div class="photo__example">
@@ -74,32 +73,24 @@
                 title="yourlogo"
               /> -->
 
-              <div class="link__section js_result_linktel">
-                <a class="circle__awesome" href="tel:" target="_blank">
+              <div class="link__section">
+                <a class="circle__awesome js_link_result" href="tel:" target="_blank">
                   <i class="fas fa-mobile-alt"></i>
                 </a>
 
                 <a
-                  class="circle__awesome"
-                  href="https://www.gmail.com/"
+                  class="circle__awesome js_link_result"
+                  href="mailto:"
                   target="_blank"
                 >
                   <i class="far fa-envelope"></i>
                 </a>
 
-                <a
-                  class="circle__awesome"
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                >
+                <a class="circle__awesome js_link_result" href="" target="_blank">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
 
-                <a
-                  class="circle__awesome"
-                  href="https://www.github.com/"
-                  target="_blank"
-                >
+                <a class="circle__awesome js_link_result" href="" target="_blank">
                   <i class="fab fa-github-alt"></i>
                 </a>
               </div>
@@ -170,7 +161,7 @@
                     placeholder="Ej: I am Groot!"
                     type="text"
                     name="fullName"
-                    class="fill__input js_name"
+                    class="fill__input js_text_type"
                     required=""
                   />
                   <label for="job" class="fill__label"
@@ -182,7 +173,7 @@
                     placeholder="Ej: I am Groot-developer"
                     type="text"
                     name="job"
-                    class="fill__input"
+                    class="fill__input js_text_type"
                     required=""
                   />
                 </div>
@@ -214,7 +205,7 @@
                     placeholder="Ej: iamgroot@gmail.com"
                     type="email"
                     name="emailAddress"
-                    class="fill__input"
+                    class="fill__input js_link_type"
                     required=""
                   />
                   <label for="phone" class="fill__label"
@@ -225,7 +216,7 @@
                     placeholder="Ej: 555-55-55-55"
                     type="tel"
                     name="phone"
-                    class="fill__input js_linktel"
+                    class="fill__input js_link_type"
                     required=""
                   />
                   <label for="linkedin" class="fill__label"
@@ -237,7 +228,7 @@
                     placeholder="Ej: linkedin.com/Groot"
                     type="text"
                     name="linkedin"
-                    class="fill__input"
+                    class="fill__input js_link_type"
                     required=""
                   />
                   <label for="github" class="fill__label"
@@ -248,7 +239,7 @@
                     placeholder="Ej: @Groot!"
                     type="text"
                     name="github"
-                    class="fill__input"
+                    class="fill__input js_link_type"
                     required=""
                   />
                 </div>
