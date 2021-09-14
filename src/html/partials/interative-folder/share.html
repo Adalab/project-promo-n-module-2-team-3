@@ -5,19 +5,22 @@
     font_awesome="fas fa-share-alt"
   ></include>
   <section class="js_collapsable_content hidden">
-    <button class="share--button">
+    <button class="share--button js_button_create">
       <i class="far fa-id-card"></i>
       <span> Crear tarjeta</span>
     </button>
 
-    <section class="creada">
-      <h3 class="creada--title">La tarjecta ha sido creada:</h3>
-      <p class="creada--p">https://awesome-profile-card.com?id=A456DF0001</p>
+    <section class="creada js-twitter-share">
+      <h3 class="creada--title">La tarjeta ha sido creada:</h3>
+      <p class="creada--p js-card-link"></p>
       <!-- pendiente hacerlo interactivo -->
       <button class="creada--button">
         <i class="fab fa-twitter"></i>
         <span class="span">Compartir en twitter</span>
       </button>
     </section>
+    <div>
+      <p class="js-hidden-box">Necesita rellenar todos los campos</p>
+    </div>
   </section>
 </fieldset>
