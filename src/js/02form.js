@@ -10,7 +10,7 @@ const resultLinkAll = document.querySelectorAll('.js_link_result');
 function text() {
   for (let i = 0; i < inputTextAll.length; i++) {
     if (inputTextAll[i].value !== '') {
-      resultTextAll[i].innerHTML = inputTextAll[i].value;  
+      resultTextAll[i].innerHTML = inputTextAll[i].value;
     }
     else if(inputTextAll[i].name === 'fullName') {
       resultTextAll[i].innerHTML = 'Nombre Apellido';
