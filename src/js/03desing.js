@@ -2,23 +2,23 @@
 //Variables
 const radioAll= document.querySelectorAll('.js_radio');
 const textSection= document.querySelector('.js_text_section');
-//resultLinkAll
 //resultTextAll
 
 //Funciones
 function paintDiv(clickedEl){
+  debugger;
     if(clickedEl.value==='blue_scale'){
-      textSection.classList.remove('color_red_text');
-      textSection.classList.remove('color_mix_text');
-      textSection.classList.add('color_default_text'); 
+      textSection.classList.remove('color_red_line');
+      textSection.classList.remove('color_mix_line');
+      textSection.classList.add('color_default_line'); 
     }else if(clickedEl.value==='red_scale'){
-      textSection.classList.remove('color_default_text');
-      textSection.classList.remove('color_mix_text');
-      textSection.classList.add('color_red_text');     
+      textSection.classList.remove('color_default_line');
+      textSection.classList.remove('color_mix_line');
+      textSection.classList.add('color_red_line');     
     }else if( clickedEl.value==='mix_scale'){
-      textSection.classList.remove('color_default_text');
-      textSection.classList.remove('color_red_text');
-      textSection.classList.add('color_mix_text'); 
+      textSection.classList.remove('color_default_line');
+      textSection.classList.remove('color_red_line');
+      textSection.classList.add('color_mix_line'); 
     }       
 }
 function paintText(clickedEl){

@@ -58,7 +58,6 @@
         font-family: $montserrat;
         font-weight: 700;
         font-size: 18px;
-        color: $dark_green_blue;
         margin-left: 20px;
         margin-top: 15px;
       }
@@ -114,15 +113,20 @@
 }
 
 .color_default_text {
-  border-left: solid 5px $dirty_blue;
   color: $dark_green_blue;
 }
-
 .color_red_text {
-  border-left: solid 5px $dried_blood;
   color: $dried_blood;
 }
 .color_mix_text {
-  border-left: solid 5px $slate;
   color: $slate;
+}
+.color_default_line {
+  border-left: solid 5px $dirty_blue;
+}
+.color_red_line {
+  border-left: solid 5px $rusty_red;
+}
+.color_mix_line {
+  border-left: solid 5px $faded_orange;
 }
