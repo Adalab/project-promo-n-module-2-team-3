@@ -66,7 +66,6 @@
         font-family: $montserrat;
         font-weight: 400;
         font-size: 16px;
-        color: $gunmetal;
         margin-left: 20px;
       }
     }
@@ -98,35 +97,51 @@
     }
   }
 }
-//Modifiers
-.color_default_circle {
-  color: $dark_green_blue;
-  border: solid 2px $hospital_green;
-}
-.color_red_circle {
-  color: $rusty_red;
-  border: solid 2px $tomato;
-}
-.color_mix_circle {
-  color: $faded_orange;
-  border: solid 2px $light_grey_blue;
+//Modifiers palettes
+.palette_0 {
+  .color_text {
+    color: $dark_green_blue;
+  }
+  .color_job {
+    color: $hospital_green;
+  }
+  .color_line {
+    border-left: solid 5px $dirty_blue;
+  }
+  .color_circle {
+    color: $dirty_blue;
+    border: solid 2px $hospital_green;
+  }
 }
 
-.color_default_text {
-  color: $dark_green_blue;
+.palette_1 {
+  .color_text {
+    color: $dried_blood;
+  }
+  .color_job {
+    color: $tomato;
+  }
+  .color_line {
+    border-left: solid 5px $rusty_red;
+  }
+  .color_circle {
+    color: $rusty_red;
+    border: solid 2px $tomato;
+  }
 }
-.color_red_text {
-  color: $dried_blood;
-}
-.color_mix_text {
-  color: $slate;
-}
-.color_default_line {
-  border-left: solid 5px $dirty_blue;
-}
-.color_red_line {
-  border-left: solid 5px $rusty_red;
-}
-.color_mix_line {
-  border-left: solid 5px $faded_orange;
+
+.palette_2 {
+  .color_text {
+    color: $slate;
+  }
+  .color_job {
+    color: $light_grey_blue;
+  }
+  .color_line {
+    border-left: solid 5px $faded_orange;
+  }
+  .color_circle {
+    color: $faded_orange;
+    border: solid 2px $light_grey_blue;
+  }
 }

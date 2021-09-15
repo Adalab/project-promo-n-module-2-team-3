@@ -1,4 +1,5 @@
 'use strict';
+
 //variable
 const formElement = document.querySelector('.js_form');
 const inputTextAll = document.querySelectorAll('.js_text_type');
@@ -29,6 +30,7 @@ function link() {
 function updateAllInputs() {
   text();
   link();
+  saveInLocalStorage();
 }
 
 //Listener

@@ -1,13 +1,9 @@
 'use strict';
 const reset = document.querySelector('.js_reset');
 
-function handleReset(event){
-    event.preventDefault();
-    // for (let i = 0; i < inputTextAll.length; i++) {
-    //     if (inputTextAll[i].value !== '') {
-    //       resultTextAll[i].innerHTML = inputTextAll.placeholder; 
-    //     }
-    //   } NO FUNCIONA
+function handleReset(event) {
+  event.preventDefault();
+  console.log('Hey reset');
 }
 
-reset.addEventListener('click' , handleReset );
+reset.addEventListener('click', handleReset);

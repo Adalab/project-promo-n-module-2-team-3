@@ -1,9 +1,15 @@
 'use strict';
 
+function getPaletteInfo() {
+  const paletteInfo = parseInt(
+    document.querySelector('.js_palettes:checked').value
+  );
+  return paletteInfo;
+}
 function getUserData() {
   return {
     photo: photo,
-    palette: parseInt(document.querySelector('.js_palette:checked').value),
+    palette: getPaletteInfo(),
     name: document.querySelector('.js_name').value,
     job: document.querySelector('.js_job').value,
     email: document.querySelector('.js_email').value,

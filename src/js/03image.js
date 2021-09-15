@@ -34,6 +34,7 @@ function updatePhoto() {
     profilePreview.style.backgroundImage = `url(${currentPhoto})`;
     profileImage.style.backgroundImage = `url(${currentPhoto})`;
   }
+  saveInLocalStorage();
 }
 
 function clearPhoto() {

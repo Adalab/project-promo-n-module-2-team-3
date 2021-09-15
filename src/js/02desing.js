@@ -1,66 +1,36 @@
 'use strict';
 //Variables
 const radioAll = document.querySelectorAll('.js_radio');
-const textSection = document.querySelector('.js_text_section');
+const paletteResult = document.querySelector('.js_palette_result');
+let checkedPalette = 0;
 //resultTextAll
 
 //Funciones
-function paintDiv(clickedEl) {
-  debugger;
-  if (clickedEl.value === 'blue_scale') {
-    textSection.classList.remove('color_red_line');
-    textSection.classList.remove('color_mix_line');
-    textSection.classList.add('color_default_line');
-  } else if (clickedEl.value === 'red_scale') {
-    textSection.classList.remove('color_default_line');
-    textSection.classList.remove('color_mix_line');
-    textSection.classList.add('color_red_line');
-  } else if (clickedEl.value === 'mix_scale') {
-    textSection.classList.remove('color_default_line');
-    textSection.classList.remove('color_red_line');
-    textSection.classList.add('color_mix_line');
-  }
-}
-function paintText(clickedEl) {
-  for (const resultText of resultTextAll) {
-    if (clickedEl.value === 'blue_scale') {
-      resultText.classList.remove('color_red_text');
-      resultText.classList.remove('color_mix_text');
-      resultText.classList.add('color_default_text');
-    } else if (clickedEl.value === 'red_scale') {
-      resultText.classList.remove('color_default_text');
-      resultText.classList.remove('color_mix_text');
-      resultText.classList.add('color_red_text');
-    } else if (clickedEl.value === 'mix_scale') {
-      resultText.classList.remove('color_default_text');
-      resultText.classList.remove('color_red_text');
-      resultText.classList.add('color_mix_text');
-    }
-  }
-}
-function paintPalettes(clickedEl) {
-  for (const resultLink of resultLinkAll) {
-    if (clickedEl.value === 'blue_scale') {
-      resultLink.classList.remove('color_red_circle');
-      resultLink.classList.remove('color_mix_circle');
-      resultLink.classList.add('color_default_circle');
-    } else if (clickedEl.value === 'red_scale') {
-      resultLink.classList.remove('color_default_circle');
-      resultLink.classList.remove('color_mix_circle');
-      resultLink.classList.add('color_red_circle');
-    } else if (clickedEl.value === 'mix_scale') {
-      resultLink.classList.remove('color_default_circle');
-      resultLink.classList.remove('color_red_circle');
-      resultLink.classList.add('color_mix_circle');
-    }
-  }
-}
-function handlerPalette(ev) {
-  const clickedEl = ev.currentTarget;
-  console.log(clickedEl);
-  paintPalettes(clickedEl);
-  paintDiv(clickedEl);
-  paintText(clickedEl);
+// function paintPalettes(clickedEl) {
+//   if (clickedEl.value === 'blue_scale') {
+//     palettes.classList.remove('palette_1');
+//     palettes.classList.remove('palette_2');
+//     palettes.classList.add('palette_0');
+//   } else if (clickedEl.value === 'red_scale') {
+//     palettes.classList.remove('palette_0');
+//     palettes.classList.remove('palette_2');
+//     palettes.classList.add('palette_1');
+//   } else if (clickedEl.value === 'mix_scale') {
+//     palettes.classList.remove('palette_0');
+//     palettes.classList.remove('palette_1');
+//     palettes.classList.add('palette_2');
+//   }
+// }
+function handlerPalette() {
+  //const clickedEl = ev.currentTarget;
+  //paintPalettes(clickedEl);
+  //suyo---
+  paletteResult.classList.remove('palette_0', 'palette_1', 'palette_2');
+  const checkedPaletteElement = document.querySelector('.js_palettes:checked');
+  checkedPalette = checkedPaletteElement.value;
+  paletteResult.classList.add('palette_' + checkedPalette);
+  // eslint-disable-next-line no-undef
+  saveInLocalStorage();
 }
 
 //Listener
