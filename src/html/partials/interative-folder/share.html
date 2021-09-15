@@ -10,17 +10,20 @@
       <span> Crear tarjeta</span>
     </button>
 
-    <section class="creada js-twitter-share">
+    <section class="creada js_twitter_share hidden">
       <h3 class="creada--title">La tarjeta ha sido creada:</h3>
-      <p class="creada--p js-card-link"></p>
+      <p class="creada--p js_card_link"></p>
       <!-- pendiente hacerlo interactivo -->
-      <button class="creada--button">
+      <button class="creada--button js_twitter_btn">
         <i class="fab fa-twitter"></i>
-        <span class="span">Compartir en twitter</span>
+        <a href="" class="span js_twitter_link" target="_blank"
+          >Compartir en twitter</a
+        >
+        <!-- data-show-count="false" NO SABEMOS SI METERLO EN LA A -->
       </button>
     </section>
-    <div>
-      <p class="js-hidden-box">Necesita rellenar todos los campos</p>
+    <div class="js_mistake hidden">
+      <p class="js_hidden_box">Necesita rellenar todos los campos</p>
     </div>
   </section>
 </fieldset>

@@ -1,8 +1,8 @@
 'use strict';
 const buttonShare = document.querySelector('.js_button_create');
-const cardResult = document.querySelector('.js-shareclick');
-const hiddenElement = document.querySelector('.js-hidden-box');
-const twitterHiddenElement = document.querySelector('.js-twitter-share');
+const cardResult = document.querySelector('.js_shareclick');
+const hiddenElement = document.querySelector('.js_hidden_box');
+const twitterHiddenElement = document.querySelector('.js_twitter_share');
 let shareLink = '';
 const userData = {
   palettes: '',
