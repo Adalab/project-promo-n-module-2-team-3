@@ -1,11 +1,22 @@
 'use strict';
 
 function getPaletteInfo() {
-  const paletteInfo = parseInt(
-    document.querySelector('.js_palettes:checked').value
-  );
-  return paletteInfo;
+  let checkedPalette= '';
+  const superChecked= document.querySelector('.js_radio:checked');
+  const paletteFound = radioAll.findIndex((pal)=>{
+    pal.checked === superChecked;
+  });
+  
+  if( paletteFound !== -1){
+     checkPalette = parseInt(
+      document.querySelector('.js_radio:checked').value
+    ); 
+  }else{
+    checkedPalette = 0;
+  } 
+  return checkedPalette;
 }
+
 function getUserData() {
   return {
     photo: photo,
@@ -36,7 +47,7 @@ function getFromLocalStorage() {
     document.querySelector('.js_linkedin').value = userData.linkedin;
     document.querySelector('.js_github').value = userData.github;
     photo = userData.photo;
-    const paletteElements = document.querySelectorAll('.js_palette');
+    const paletteElements = document.querySelectorAll('.js_palettes');
     for (const paletteElement of paletteElements) {
       if (paletteElement.value === userData.palette) {
         paletteElement.checked = true;

@@ -7,7 +7,7 @@ let checkedPalette = 0;
 
 function handlerPalette() {
   paletteResult.classList.remove('palette_0', 'palette_1', 'palette_2');
-  const checkedPaletteElement = document.querySelector('.js_palettes:checked');
+  const checkedPaletteElement = document.querySelector('.js_radio:checked');
   checkedPalette = checkedPaletteElement.value;
   paletteResult.classList.add('palette_' + checkedPalette);
   saveInLocalStorage();
@@ -20,4 +20,4 @@ function listenerRadio() {
   }
 }
 
-
+listenerRadio();

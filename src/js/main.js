@@ -1,5 +1,5 @@
 'use strict';
-
+debugger;
 function preventSubmit(event) {
   event.preventDefault();
 }
@@ -9,4 +9,3 @@ getFromLocalStorage();
 updateAllInputs();
 handlerPalette();
 updatePhoto();
-listenerRadio();
