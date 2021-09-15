@@ -36,6 +36,7 @@ function fetchAPI() {
   })
     .then((response) => response.json())
     .then((data) => {
+      debugger;
       const linkElement = document.querySelector('.js-card-link');
       if (data.success === true) {
         data.cardURL;

@@ -9,3 +9,4 @@ getFromLocalStorage();
 updateAllInputs();
 handlerPalette();
 updatePhoto();
+listenerRadio();
