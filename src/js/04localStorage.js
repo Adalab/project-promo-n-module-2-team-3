@@ -1,15 +1,10 @@
 'use strict';
 
-function getPaletteInfo() {
-  const paletteInfo = parseInt(
-    document.querySelector('.js_palettes:checked').value
-  );
-  return paletteInfo;
-}
 function getUserData() {
+  console.log(parseInt(document.querySelector('.js_palettes:checked').value));
   return {
     photo: photo,
-    palette: getPaletteInfo(),
+    palette: parseInt(document.querySelector('.js_palettes:checked').value),
     name: document.querySelector('.js_name').value,
     job: document.querySelector('.js_job').value,
     email: document.querySelector('.js_email').value,
@@ -36,14 +31,14 @@ function getFromLocalStorage() {
     document.querySelector('.js_linkedin').value = userData.linkedin;
     document.querySelector('.js_github').value = userData.github;
     photo = userData.photo;
-    const paletteElements = document.querySelectorAll('.js_palette');
+    const paletteElements = document.querySelectorAll('.js_palettes');
     for (const paletteElement of paletteElements) {
-      if (paletteElement.value === userData.palette) {
+      if (parseInt(paletteElement.value) === userData.palette) {
         paletteElement.checked = true;
       }
     }
 
-    updateAllInputs();
+    // updateAllInputs();
 
     handlerPalette();
 
