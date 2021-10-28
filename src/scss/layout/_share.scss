@@ -20,8 +20,8 @@
     &__dis {
       background-color: #d5d5d5;
       &:hover {
-        transform: scale(1.05);
-        transition: 0.7s transform ease-in;
+        background-color: #d5d5d5;
+        transform: scale(1);
       }
     }
     @include tablet {
