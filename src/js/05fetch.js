@@ -3,6 +3,8 @@ const buttonShare = document.querySelector('.js_button_create');
 const cardResult = document.querySelector('.js_shareclick');
 const hiddenElement = document.querySelector('.js_hidden_box');
 const twitterHiddenElement = document.querySelector('.js_twitter_share');
+const linkElement = document.querySelector('.js_card_link');
+
 let shareLink = '';
 const userData = {
   palettes: '',
@@ -21,7 +23,7 @@ function handlerCreateCard(e) {
   buttonShare.classList.remove('share--button');
   buttonShare.classList.add('share--button__dis');
   buttonShare.disabled = true;
-  twitterHiddenElement.classList.remove('hidden');
+  twitterHiddenElement.classList.add('hidden');
 }
 
 function fetchAPI() {
@@ -36,12 +38,11 @@ function fetchAPI() {
   })
     .then((response) => response.json())
     .then((data) => {
-      debugger;
-      const linkElement = document.querySelector('.js-card-link');
       if (data.success === true) {
         data.cardURL;
         shareLink = data.cardURL;
         linkElement.innerHTML = `<a href="${shareLink}" class="shareclick__text js-shareclick" target="_blank">Pincha aqui para ver tu tarjeta AWESOME.</a>`;
+
         twitterHiddenElement.classList.remove('hidden');
       } else {
         buttonShare.disabled = false;
