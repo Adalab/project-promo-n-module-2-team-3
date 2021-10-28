@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Awesome profile-cards</title>
+    <title>Groot profile-cards</title>
     <link rel="icon" href="./assets/images/logo-head.png" />
     <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -53,12 +53,8 @@
 
             <div class="card__example palette_0 js_palette_result">
               <div class="text__section color_line js_text_section">
-                <h3 class="name__card color_text js_text_result">
-                  Nombre Apellido
-                </h3>
-                <h4 class="job__name color_job js_text_result">
-                  Front-end developer
-                </h4>
+                <h3 class="name__card color_text js_text_result">Nombre Apellido</h3>
+                <h4 class="job__name color_job js_text_result">Front-end developer</h4>
               </div>
 
               <div class="photo__example">
@@ -66,9 +62,7 @@
                   alt="yourlogo"
                   title="yourlogo"
                   class="photo__example--logo profile__image js__profile-image"
-                  style="
-                    background-image: url(./assets/images/jessicawalsh.jpg);
-                  "
+                  style="background-image: url(./assets/images/jessicawalsh.jpg)"
                 ></div>
               </div>
 
@@ -119,9 +113,7 @@
         <form class="form js_form">
           <section class="select">
             <fieldset class="desing">
-              <section
-                class="section--title desing__title js_collapsable_title"
-              >
+              <section class="section--title desing__title js_collapsable_title">
                 <i class="far fa-object-ungroup icon"></i>
                 <h3 class="title title2">Diseña</h3>
                 <i class="fas fa-chevron-down arrow js_arrow"></i>
@@ -141,9 +133,7 @@
                       checked
                     />
                     <div class="colors-container">
-                      <div
-                        class="colors-container__color dark_green_blue"
-                      ></div>
+                      <div class="colors-container__color dark_green_blue"></div>
                       <div class="colors-container__color dirty_blue"></div>
                       <div class="colors-container__color hospital_green"></div>
                     </div>
@@ -157,6 +147,7 @@
                       name="color"
                       value="1"
                       class="js_radio js_palettes"
+                      
                     />
                     <div class="colors-container">
                       <div class="colors-container__color dried_blood"></div>
@@ -173,32 +164,30 @@
                       name="color"
                       value="2"
                       class="js_radio js_palettes"
+                      
                     />
                     <div class="colors-container">
                       <div class="colors-container__color slate"></div>
                       <div class="colors-container__color faded_orange"></div>
-                      <div
-                        class="colors-container__color light_grey_blue"
-                      ></div>
+                      <div class="colors-container__color light_grey_blue"></div>
                     </div>
                   </div>
+
                 </div>
               </section>
             </fieldset>
 
             <fieldset class="fill">
-              <section class="section--title js_collapsable_title">
+              <section class="section--title  js_collapsable_title">
                 <i class="far fa-keyboard icon"></i>
-                <h3 class="title">Rellena</h3>
+                <h3 class="title ">Rellena</h3>
                 <i class="fas fa-chevron-down arrow js_arrow"></i>
               </section>
 
               <section class="js_collapsable_content hidden">
                 <div class="fill__data">
                   <label for="fullName" class="fill__label">
-                    Nombre completo<span class="fill__label--asterisk"
-                      >*</span
-                    ></label
+                    Nombre completo<span class="fill__label--asterisk">*</span></label
                   >
                   <input
                     id="fullName"
@@ -224,9 +213,7 @@
 
                 <div class="fill__photo">
                   <label for="photo" class="fill__label"
-                    >Imagen de perfil<span class="fill__label--asterisk"
-                      >*</span
-                    ></label
+                    >Imagen de perfil<span class="fill__label--asterisk">*</span></label
                   >
 
                   <label class="fill__photo--upload-btn" for="img-selector"
@@ -293,37 +280,35 @@
             </fieldset>
 
             <fieldset class="share">
-              <section class="section--title js_collapsable_title">
+              <section class="section--title  js_collapsable_title">
                 <i class="fas fa-share-alt icon"></i>
-                <h3 class="title">Comparte</h3>
+                <h3 class="title ">Comparte</h3>
                 <i class="fas fa-chevron-down arrow js_arrow"></i>
               </section>
 
               <section class="js_collapsable_content hidden">
-                <button
-                  type="button"
-                  disabled
-                  class="share--button js_button_create disabled"
-                >
+                <button class="share--button js_button_create">
                   <i class="far fa-id-card"></i>
                   <span> Crear tarjeta</span>
                 </button>
 
-                <section class="creada js-twitter-share">
+                <section class="creada js_twitter_share">
                   <h3 class="creada--title">La tarjeta ha sido creada:</h3>
                   <p class="creada--p js_card_link"></p>
-                  <button class="creada--button">
+                  <button class="creada--button js_twitter_btn">
                     <i class="fab fa-twitter"></i>
-                    <span class="span">Compartir en twitter</span>
+                    <a href="" class="span js_twitter_link" target="_blank"
+                      >Compartir en twitter</a
+                    >
+                    <!-- data-show-count="false" NO SABEMOS SI METERLO EN LA A -->
                   </button>
                 </section>
-                <div class="hidden">
-                  <p class="js-hidden-box">
-                    Necesita rellenar todos los campos
-                  </p>
+                <div class="js_mistake">
+                  <p class="js_hidden_box">Necesita rellenar todos los campos</p>
                 </div>
               </section>
             </fieldset>
+
           </section>
         </form>
       </main>
@@ -337,6 +322,7 @@
             class="adalab__logo"
         /></a>
       </footer>
+
     </div>
     <!-- Java Script -->
     <script src="./assets/js/main.js"></script>
