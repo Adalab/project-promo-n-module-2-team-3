@@ -2,7 +2,7 @@
 //Variables
 const radioAll = document.querySelectorAll('.js_radio');
 const paletteResult = document.querySelector('.js_palette_result');
-let checkedPalette = 0;
+// let checkedPalette = 0;
 //resultTextAll
 
 function handlerPalette() {

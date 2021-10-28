@@ -1,5 +1,5 @@
 'use strict';
-debugger;
+
 function preventSubmit(event) {
   event.preventDefault();
 }

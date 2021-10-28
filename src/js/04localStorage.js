@@ -1,20 +1,5 @@
 'use strict';
 
-function getPaletteInfo() {
-  let checkedPalette = '';
-  const superChecked = document.querySelector('.js_radio:checked');
-  const paletteFound = radioAll.findIndex((pal) => {
-    pal.checked === superChecked;
-  });
-
-  if (paletteFound !== -1) {
-    checkPalette = parseInt(document.querySelector('.js_radio:checked').value);
-  } else {
-    checkedPalette = 0;
-  }
-  return checkedPalette;
-}
-
 function getUserData() {
   console.log(parseInt(document.querySelector('.js_palettes:checked').value));
   return {
