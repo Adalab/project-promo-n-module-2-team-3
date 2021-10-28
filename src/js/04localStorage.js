@@ -16,6 +16,22 @@ function getUserData() {
 
 function saveInLocalStorage() {
   const userData = getUserData();
+  if (
+    userData.palettes === '' ||
+    userData.name === '' ||
+    userData.job === '' ||
+    userData.photo === '' ||
+    userData.email === '' ||
+    userData.phone === '' ||
+    userData.linkedin === '' ||
+    userData.github === ''
+  ) {
+    buttonShare.classList.add('share--button__dis');
+    buttonShare.disabled = true;
+  } else {
+    buttonShare.classList.remove('share--button__dis');
+    buttonShare.disabled = false;
+  }
   const userDataInString = JSON.stringify(userData);
   localStorage.setItem('userData', userDataInString);
 }

@@ -21,8 +21,6 @@ function handlerCreateCard(e) {
   e.preventDefault();
   fetchAPI();
   buttonShare.classList.remove('share--button');
-  buttonShare.classList.add('share--button__dis');
-  buttonShare.disabled = true;
   twitterHiddenElement.classList.add('hidden');
 }
 
@@ -42,10 +40,12 @@ function fetchAPI() {
         data.cardURL;
         shareLink = data.cardURL;
         linkElement.innerHTML = `<a href="${shareLink}" class="shareclick__text js-shareclick" target="_blank">Pincha aqui para ver tu tarjeta AWESOME.</a>`;
-
+        buttonShare.classList.remove('share--button__dis');
+        buttonShare.disabled = false;
         twitterHiddenElement.classList.remove('hidden');
       } else {
-        buttonShare.disabled = false;
+        buttonShare.classList.add('share--button__dis');
+        buttonShare.disabled = true;
         twitterHiddenElement.classList.add('hidden');
         hiddenElement.classList.remove('hidden');
       }
