@@ -51,10 +51,10 @@
               <i class="far fa-trash-alt"></i> reset
             </button>
 
-            <div class="card__example">
-              <div class="text__section">
-                <h3 class="name__card js_text_result">Nombre Apellido</h3>
-                <h4 class="job__name js_text_result">Front-end developer</h4>
+            <div class="card__example palette_0 js_palette_result">
+              <div class="text__section color_line js_text_section">
+                <h3 class="name__card color_text js_text_result">Nombre Apellido</h3>
+                <h4 class="job__name color_job js_text_result">Front-end developer</h4>
               </div>
 
               <div class="photo__example">
@@ -74,23 +74,35 @@
               /> -->
 
               <div class="link__section">
-                <a class="circle__awesome js_link_result" href="tel:" target="_blank">
+                <a
+                  class="circle__awesome color_circle js_link_result"
+                  href="tel:"
+                  target="_blank"
+                >
                   <i class="fas fa-mobile-alt"></i>
                 </a>
 
                 <a
-                  class="circle__awesome js_link_result"
+                  class="circle__awesome color_circle js_link_result"
                   href="mailto:"
                   target="_blank"
                 >
                   <i class="far fa-envelope"></i>
                 </a>
 
-                <a class="circle__awesome js_link_result" href="" target="_blank">
+                <a
+                  class="circle__awesome color_circle js_link_result"
+                  href=""
+                  target="_blank"
+                >
                   <i class="fab fa-linkedin-in"></i>
                 </a>
 
-                <a class="circle__awesome js_link_result" href="" target="_blank">
+                <a
+                  class="circle__awesome color_circle js_link_result"
+                  href=""
+                  target="_blank"
+                >
                   <i class="fab fa-github-alt"></i>
                 </a>
               </div>
@@ -112,7 +124,14 @@
                 <div class="radio">
                   <div class="option">
                     <label for="color"> </label>
-                    <input id="color" type="radio" name="color" value="blue_scale" />
+                    <input
+                      id="color"
+                      type="radio"
+                      name="color"
+                      value="0"
+                      class="js_radio js_palettes"
+                      checked
+                    />
                     <div class="colors-container">
                       <div class="colors-container__color dark_green_blue"></div>
                       <div class="colors-container__color dirty_blue"></div>
@@ -122,7 +141,14 @@
 
                   <div class="option">
                     <label for="color"> </label>
-                    <input id="color" type="radio" name="color" value="red_scale" />
+                    <input
+                      id="color"
+                      type="radio"
+                      name="color"
+                      value="1"
+                      class="js_radio js_palettes"
+                      
+                    />
                     <div class="colors-container">
                       <div class="colors-container__color dried_blood"></div>
                       <div class="colors-container__color rusty_red"></div>
@@ -132,7 +158,14 @@
 
                   <div class="option">
                     <label for="color"> </label>
-                    <input id="color" type="radio" name="color" value="mix_scale" />
+                    <input
+                      id="color"
+                      type="radio"
+                      name="color"
+                      value="2"
+                      class="js_radio js_palettes"
+                      
+                    />
                     <div class="colors-container">
                       <div class="colors-container__color slate"></div>
                       <div class="colors-container__color faded_orange"></div>
@@ -161,7 +194,7 @@
                     placeholder="Ej: I am Groot!"
                     type="text"
                     name="fullName"
-                    class="fill__input js_text_type"
+                    class="fill__input js_text_type js_name"
                     required=""
                   />
                   <label for="job" class="fill__label"
@@ -173,7 +206,7 @@
                     placeholder="Ej: I am Groot-developer"
                     type="text"
                     name="job"
-                    class="fill__input js_text_type"
+                    class="fill__input js_text_type js_job"
                     required=""
                   />
                 </div>
@@ -205,7 +238,7 @@
                     placeholder="Ej: iamgroot@gmail.com"
                     type="email"
                     name="emailAddress"
-                    class="fill__input js_link_type"
+                    class="fill__input js_link_type js_email"
                     required=""
                   />
                   <label for="phone" class="fill__label"
@@ -216,7 +249,7 @@
                     placeholder="Ej: 555-55-55-55"
                     type="tel"
                     name="phone"
-                    class="fill__input js_link_type"
+                    class="fill__input js_link_type js_phone"
                     required=""
                   />
                   <label for="linkedin" class="fill__label"
@@ -228,7 +261,7 @@
                     placeholder="Ej: linkedin.com/Groot"
                     type="text"
                     name="linkedin"
-                    class="fill__input js_link_type"
+                    class="fill__input js_link_type js_linkedin"
                     required=""
                   />
                   <label for="github" class="fill__label"
@@ -239,7 +272,7 @@
                     placeholder="Ej: @Groot!"
                     type="text"
                     name="github"
-                    class="fill__input js_link_type"
+                    class="fill__input js_link_type js_github"
                     required=""
                   />
                 </div>
@@ -254,20 +287,23 @@
               </section>
 
               <section class="js_collapsable_content hidden">
-                <button class="share--button">
+                <button class="share--button js_button_create">
                   <i class="far fa-id-card"></i>
                   <span> Crear tarjeta</span>
                 </button>
 
-                <section class="creada">
-                  <h3 class="creada--title">La tarjecta ha sido creada:</h3>
-                  <p class="creada--p">https://awesome-profile-card.com?id=A456DF0001</p>
+                <section class="creada js-twitter-share">
+                  <h3 class="creada--title">La tarjeta ha sido creada:</h3>
+                  <p class="creada--p js-card-link"></p>
                   <!-- pendiente hacerlo interactivo -->
                   <button class="creada--button">
                     <i class="fab fa-twitter"></i>
                     <span class="span">Compartir en twitter</span>
                   </button>
                 </section>
+                <div>
+                  <p class="js-hidden-box">Necesita rellenar todos los campos</p>
+                </div>
               </section>
             </fieldset>
 

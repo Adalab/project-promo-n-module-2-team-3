@@ -1,26 +1,25 @@
 'use strict';
 
 function getPaletteInfo() {
-  let checkedPalette= '';
-  const superChecked= document.querySelector('.js_radio:checked');
-  const paletteFound = radioAll.findIndex((pal)=>{
+  let checkedPalette = '';
+  const superChecked = document.querySelector('.js_radio:checked');
+  const paletteFound = radioAll.findIndex((pal) => {
     pal.checked === superChecked;
   });
-  
-  if( paletteFound !== -1){
-     checkPalette = parseInt(
-      document.querySelector('.js_radio:checked').value
-    ); 
-  }else{
+
+  if (paletteFound !== -1) {
+    checkPalette = parseInt(document.querySelector('.js_radio:checked').value);
+  } else {
     checkedPalette = 0;
-  } 
+  }
   return checkedPalette;
 }
 
 function getUserData() {
+  console.log(parseInt(document.querySelector('.js_palettes:checked').value));
   return {
     photo: photo,
-    palette: getPaletteInfo(),
+    palette: parseInt(document.querySelector('.js_palettes:checked').value),
     name: document.querySelector('.js_name').value,
     job: document.querySelector('.js_job').value,
     email: document.querySelector('.js_email').value,
@@ -49,12 +48,12 @@ function getFromLocalStorage() {
     photo = userData.photo;
     const paletteElements = document.querySelectorAll('.js_palettes');
     for (const paletteElement of paletteElements) {
-      if (paletteElement.value === userData.palette) {
+      if (parseInt(paletteElement.value) === userData.palette) {
         paletteElement.checked = true;
       }
     }
 
-    updateAllInputs();
+    // updateAllInputs();
 
     handlerPalette();
 
